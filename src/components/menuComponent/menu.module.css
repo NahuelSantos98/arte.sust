@@ -1,0 +1,118 @@
+/* Estilo para el contenedor del menú */
+.menu {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 2.25rem; 
+    height: 1.5rem;
+    cursor: pointer; 
+    z-index: 100; 
+}
+
+/* Estilo para las barras del menu hamburguesa */
+.menu .span {
+    height: .2rem; 
+    width: 100%; 
+    background-color: #000000; 
+    border-radius: .2rem;
+    transition: all 0.3s ease; 
+}
+
+
+.menu.cross .span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg); 
+}
+
+
+.menu.cross .span:nth-child(2) {
+    opacity: 0; 
+}
+
+.menu.cross .span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Estilo para el sidebar */
+.sidebar {
+    position: absolute; /* Posiciona el sidebar de forma absoluta en relación a su contenedor */
+    top: 0;
+    left: -150px; /* Mueve el sidebar fuera de la vista inicial a la izquierda */
+    height: 100vh;
+    width: 150px; 
+    background-color: #ffffff;
+    display: flex; 
+    flex-direction: column; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    opacity: 0; /* Hace que el sidebar sea inicialmente invisible */
+    z-index: 50; 
+}
+
+
+.sidebar.open {
+    transform: translateX(150px); /* Mueve el sidebar a la vista desde el lado izquierdo */
+    opacity: 1;
+}
+
+/* Para las opciones del menu */
+.sidebarMenu {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+.sidebarMenu li {
+    margin: 20px 0; /* Trabaja como un gap */
+}
+
+
+.sidebarMenu a {
+    color: #000000;
+    text-decoration: none; 
+    position: relative; /* Necesario para posicionar el ::before para subrayado */
+}
+
+/* Pseudo-elemento para el subrayado animado */
+.sidebarMenu a::before {
+    content: ''; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona el pseudo-elemento de forma absoluta dentro del enlace */
+    bottom: -2px; /* Ajusta la posición vertical del subrayado */
+    left: 0; /* Alinea el subrayado al borde izquierdo del enlace */
+    width: 100%; /* Hace que el subrayado tenga el mismo ancho que el enlace */
+    height: 2px; /* Espesor del subrayado */
+    background-color: rgb(0, 195, 255); /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente oculto con escala 0 en el eje X */
+    transform-origin: bottom right; /* Anima desde el lado derecho */
+    transition: transform 0.3s ease; /* Aplica una transición suave a la transformación del subrayado */
+}
+
+/* Muestra el subrayado al pasar el ratón o cuando el enlace está seleccionado */
+.sidebarMenu a:hover::before,
+.sidebarMenu a.selected::before {
+    transform: scaleX(1); /* Muestra el subrayado con escala 1 en el eje X */
+    transform-origin: bottom left; /* Anima hacia el lado izquierdo */
+}
+
+/* Asegura que el subrayado esté visible para el enlace seleccionado */
+.selected a::before {
+    transform: scaleX(1); /* Muestra el subrayado para el enlace seleccionado */
+}
+
+
+.overlay {
+    position: absolute; /* Cubre toda el área del viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Establece que el overlay cubra toda el área visible */
+    background: rgba(205, 205, 205, 0.5); /* Fondo semi-transparente gris claro */
+    z-index: 40; /* Asegura que el overlay esté por encima de otros elementos con índice menor, pero debajo del menú */
+}
+
+
+@media (min-width:480px) {
+    .sidebar {
+        width: 250px; /* Aumenta el ancho del sidebar */
+    }
+}
