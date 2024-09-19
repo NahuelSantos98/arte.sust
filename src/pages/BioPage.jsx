@@ -2,7 +2,9 @@
 
 const BioPage = () => {
   return (
-    <div>BioPage</div>
+    <div>
+      
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
-    width: 2.25rem; 
+    width: 2rem; 
     height: 1.5rem;
     cursor: pointer; 
     z-index: 100; 
@@ -80,7 +80,7 @@
     bottom: -2px; /* Ajusta la posición vertical del subrayado */
     left: 0; /* Alinea el subrayado al borde izquierdo del enlace */
     width: 100%; /* Hace que el subrayado tenga el mismo ancho que el enlace */
-    height: 2px; /* Espesor del subrayado */
+    height: 3px; /* Espesor del subrayado */
     background-color: rgb(0, 195, 255); /* Color del subrayado */
     transform: scaleX(0); /* Inicialmente oculto con escala 0 en el eje X */
     transform-origin: bottom right; /* Anima desde el lado derecho */
