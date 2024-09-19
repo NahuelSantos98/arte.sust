@@ -1,15 +1,34 @@
-.containeNavbar{
+.containerNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
-    background-color: #ffffff; 
+    background-color: #ffffff;
+    position: relative; 
+}
+
+.logoContainer {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    margin-bottom: 1rem;
+}
+
+.imageLogo {
+    height: 5rem;
+    width: 10rem;
 }
 
 .menuContainerNavbar {
+    margin-left: auto; 
     display: flex;
     align-items: center;
 }
 
 
-.logoContainer{
-    align-self: center;
-    position: absolute;
+@media (min-width:768px){
+    .logoContainer{
+        left: 50%;
+        transform: translateX(-50%); 
+    }
 }

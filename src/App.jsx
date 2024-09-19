@@ -20,7 +20,6 @@ function App() {
           <Route path={routes.artwork} element={<ArtWorksPage />} />
           <Route path={routes.faq} element={<FaQPage />} />
           <Route path={routes.contact} element={<ContactPage />} />
-
         </Routes>
         </div>
       </div>

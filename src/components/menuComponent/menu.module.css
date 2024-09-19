@@ -34,23 +34,24 @@
 
 /* Estilo para el sidebar */
 .sidebar {
-    position: absolute; /* Posiciona el sidebar de forma absoluta en relación a su contenedor */
+    position: absolute;
     top: 0;
-    left: -150px; /* Mueve el sidebar fuera de la vista inicial a la izquierda */
+    right: -150px;
     height: 100vh;
     width: 150px; 
     background-color: #ffffff;
     display: flex; 
     flex-direction: column; 
     transition: transform 0.3s ease, opacity 0.3s ease; 
-    opacity: 0; /* Hace que el sidebar sea inicialmente invisible */
+    opacity: 0;
     z-index: 50; 
+    pointer-events: none; /* Evita la interacción cuando está oculto */
 }
 
-
 .sidebar.open {
-    transform: translateX(150px); /* Mueve el sidebar a la vista desde el lado izquierdo */
+    transform: translateX(-150px);
     opacity: 1;
+    pointer-events: all; /* Permite la interacción cuando está visible */
 }
 
 /* Para las opciones del menu */
@@ -58,12 +59,13 @@
     list-style: none; 
     padding: 0;
     margin: 0;
-    margin-top: 4rem;
-    margin-left: 1rem;
+    margin-top: 5rem;
+    margin-right: 1.5rem;
 }
 
 .sidebarMenu li {
     margin: 20px 0; /* Trabaja como un gap */
+    margin-left: 1rem;
 }
 
 
@@ -108,11 +110,17 @@
     bottom: 0; /* Establece que el overlay cubra toda el área visible */
     background: rgba(205, 205, 205, 0.5); /* Fondo semi-transparente gris claro */
     z-index: 40; /* Asegura que el overlay esté por encima de otros elementos con índice menor, pero debajo del menú */
+    height: 100vh;
 }
 
 
-@media (min-width:480px) {
+@media (min-width: 480px) {
     .sidebar {
-        width: 250px; /* Aumenta el ancho del sidebar */
+        width: 250px;
+        right: -250px;
+    }
+
+    .sidebar.open {
+        transform: translateX(-250px);
     }
 }
