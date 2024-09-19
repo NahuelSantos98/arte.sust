@@ -28,7 +28,7 @@
 
 @media (min-width:768px){
     .logoContainer{
-        left: 50%;
-        transform: translateX(-50%); 
+        left: 47%;
+        transform: translateX(-47%); 
     }
 }
