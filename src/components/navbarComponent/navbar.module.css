@@ -4,7 +4,7 @@
     align-items: center;
     padding: 2rem;
     background-color: #ffffff;
-    position: relative; 
+    width: 100vw;
 }
 
 .logoContainer {
@@ -28,7 +28,7 @@
 
 @media (min-width:768px){
     .logoContainer{
-        left: 47%;
-        transform: translateX(-47%); 
+        left: 50%;
+        transform: translateX(-50%); 
     }
 }

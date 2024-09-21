@@ -3,5 +3,7 @@ export const routes = {
     bio: '/biography',
     artwork: '/artwork',
     faq: '/faquestions',
-    contact: '/contact'
+    contact: '/contact',
+    artDetailWithId : '/detail/:id',
+    artDetail : '/detail/',
 }

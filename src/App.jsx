@@ -6,6 +6,7 @@ import BioPage from './pages/BioPage'
 import ArtWorksPage from './pages/ArtWorksPage'
 import ContactPage from './pages/ContactPage'
 import FaQPage from './pages/FaQPage'
+import ArtDetail from "./pages/ArtDetail";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path={routes.artwork} element={<ArtWorksPage />} />
           <Route path={routes.faq} element={<FaQPage />} />
           <Route path={routes.contact} element={<ContactPage />} />
+          <Route path={routes.artDetailWithId} element={<ArtDetail/>} />
         </Routes>
         </div>
       </div>

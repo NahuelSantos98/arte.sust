@@ -18,11 +18,9 @@
     transition: all 0.3s ease; 
 }
 
-
 .menu.cross .span:nth-child(1) {
     transform: translateY(10px) rotate(45deg); 
 }
-
 
 .menu.cross .span:nth-child(2) {
     opacity: 0; 
@@ -32,25 +30,27 @@
     transform: translateY(-11px) rotate(-45deg);
 }
 
+.sidebarNotOpen {
+    display: none;
+}
+
 /* Estilo para el sidebar */
 .sidebar {
-    position: absolute;
+    display: block;
+    position: fixed; /* Cambiado de absolute a fixed */
     top: 0;
-    right: -150px;
+    right: -170px; /* Posiciona fuera de la vista */
     height: 100vh;
-    width: 150px; 
+    width: 170px; 
     background-color: #ffffff;
-    display: flex; 
     flex-direction: column; 
-    transition: transform 0.3s ease, opacity 0.3s ease; 
-    opacity: 0;
     z-index: 50; 
     pointer-events: none; /* Evita la interacción cuando está oculto */
+    transition: right 0.3s ease; /* Transición suave */
 }
 
 .sidebar.open {
-    transform: translateX(-150px);
-    opacity: 1;
+    right: 0; /* Posiciona el sidebar en vista */
     pointer-events: all; /* Permite la interacción cuando está visible */
 }
 
@@ -67,7 +67,6 @@
     margin: 20px 0; /* Trabaja como un gap */
     margin-left: 1rem;
 }
-
 
 .sidebarMenu a {
     color: #000000;
@@ -101,9 +100,8 @@
     transform: scaleX(1); /* Muestra el subrayado para el enlace seleccionado */
 }
 
-
 .overlay {
-    position: absolute; /* Cubre toda el área del viewport */
+    position: fixed; /* Cambiado de absolute a fixed */
     top: 0;
     left: 0;
     right: 0;
@@ -114,13 +112,8 @@
 }
 
 
-@media (min-width: 480px) {
-    .sidebar {
-        width: 250px;
-        right: -250px;
-    }
-
-    .sidebar.open {
-        transform: translateX(-250px);
+@media (min-width:768px){
+    .sidebar.open{
+        width: 15rem;
     }
 }
