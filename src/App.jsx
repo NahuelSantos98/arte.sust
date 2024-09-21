@@ -7,6 +7,7 @@ import ArtWorksPage from './pages/ArtWorksPage'
 import ContactPage from './pages/ContactPage'
 import FaQPage from './pages/FaQPage'
 import ArtDetail from "./pages/ArtDetail";
+import Whatsapp from "./components/whatsappComponent/Whatsapp";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path={routes.artDetailWithId} element={<ArtDetail/>} />
         </Routes>
         </div>
+        <Whatsapp />
       </div>
     </>
   );

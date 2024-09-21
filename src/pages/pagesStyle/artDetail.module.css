@@ -23,6 +23,10 @@
     gap: 3rem;
     margin-bottom: 2rem;
 }
+.descriptionArt{
+    white-space: pre-line;
+    line-height: 1.5rem;
+}
 
 @media (min-width:768px){
     .secondaryImageContainer{

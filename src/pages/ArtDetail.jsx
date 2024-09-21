@@ -21,7 +21,7 @@ const ArtDetail = () => {
             <img src={thirdImage} className={style.imageArt}  />
             <img src={fourthImage} className={style.lastImageArt} />
         </div>
-        <p>{description}</p>
+        <p className={style.descriptionArt}>{description}</p>
     </div>
   )
 }
