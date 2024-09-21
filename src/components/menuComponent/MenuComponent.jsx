@@ -1,11 +1,15 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import style from './menu.module.css';
 import { routes } from '../../utils/route';
+import { LanguageContext } from '../../context/languageContext';
 
 const MenuComponent = () => {
   const [showNav, setShowNav] = useState(false);
   const location = useLocation();
+  const {state, changeLanguageSpanish, changeLanguageEnglish} = useContext(LanguageContext)
+  const isEnglish = state.language
+
 
   return (
     <>
@@ -24,13 +28,16 @@ const MenuComponent = () => {
             <Link to={routes.bio}>Bio</Link>
           </li>
           <li className={location.pathname === routes.artwork ? style.selected : ''}>
-            <Link to={routes.artwork}>Obras</Link>
+            <Link to={routes.artwork}>{!isEnglish? 'Obras' : 'Artwork' }</Link>
           </li>
           <li className={location.pathname === routes.faq ? style.selected : ''}>
-            <Link to={routes.faq}>Preguntas Frecuentes</Link>
+            <Link to={routes.faq}>{!isEnglish? 'Preguntas Frecuentes' : 'Frequently asked questions' }</Link>
           </li>
           <li className={location.pathname === routes.contact ? style.selected : ''}>
-            <Link to={routes.contact}>Contacto</Link>
+            <Link to={routes.contact}>{!isEnglish? 'Contacto' : 'Contact' }</Link>
+          </li>
+          <li className={style.changeLanguage} >
+            <p onClick={changeLanguageSpanish}>ES</p> | <p onClick={changeLanguageEnglish}>EN</p>
           </li>
         </ul>
       </div>

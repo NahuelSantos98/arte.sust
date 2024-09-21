@@ -111,6 +111,16 @@
     height: 100vh;
 }
 
+.changeLanguage{
+    display: flex;
+    gap: 2rem;
+}
+
+.changeLanguage p{
+    cursor: pointer;
+}
+
+
 
 @media (min-width:768px){
     .sidebar.open{
