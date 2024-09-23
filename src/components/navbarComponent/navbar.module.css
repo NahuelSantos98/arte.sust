@@ -5,7 +5,11 @@
     padding: 2rem;
     background-color: #ffffff;
     width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
 }
+
 
 .logoContainer {
     position: absolute;

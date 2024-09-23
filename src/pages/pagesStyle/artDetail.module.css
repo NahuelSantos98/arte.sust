@@ -11,11 +11,6 @@
 .imageArt{
     width: 10rem;
 }
-.lastImageArt{
-    transform: rotate(90deg);
-    margin-top: 1.5rem;
-    width: 13.4rem;
-}
 .secondaryImageContainer{
     display: flex;
     flex-direction: column;

@@ -1,0 +1,22 @@
+.textLoading {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.loading{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+.spinner{
+    height: 3rem;
+    width: 3rem;
+    border: 7px solid;
+    border-radius: 50%;
+    border-color: lightblue white white white;
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+    to {transform:rotate(365deg) ;}
+}

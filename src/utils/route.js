@@ -1,6 +1,5 @@
 export const routes = {
-    home: '/biography',
-    bio: '/biography',
+    bio: '/',
     artwork: '/artwork',
     faq: '/faquestions',
     contact: '/contact',
