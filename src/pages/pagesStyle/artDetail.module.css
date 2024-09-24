@@ -1,46 +1,89 @@
-.artDetailContainer{
+.artDetailContainer {
     margin: 3rem;
     display: flex;
     align-items: center;
     gap: 1rem;
     flex-direction: column;
 }
-.pricipalImage{
+
+.pricipalImage {
     width: 90vw;
 }
-.imageArt{
+
+.imageArt {
     width: 10rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
-.secondaryImageContainer{
+
+.secondaryImageContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
     margin-bottom: 2rem;
 }
-.descriptionArt{
+
+.descriptionArt {
     white-space: pre-line;
     line-height: 1.5rem;
 }
 
-@media (min-width:768px){
-    .secondaryImageContainer{
-        width: 90vw;
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalImage {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+/* .logoIsotipo{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+} */
+
+@media (min-width: 768px) {
+    .artDetailContainer{
+        margin-top: 1rem;
+    }
+    .secondaryImageContainer {
+        width: 80vw;
         flex-direction: row;
         justify-content: center;
-        gap: 3rem;
+        gap: 2rem;
+        margin-top: 1rem;
     }
-    .pricipalImage{
+
+    .pricipalImage {
         height: 30rem;
         width: auto;
     }
-    .lastImageArt{
-        margin-top: 0;
-        margin-left: 1rem;
+
+    .imageArt {
         width: 10rem;
     }
+}
 
-    .imageArt{
-        width: 10rem;
+@media (min-width: 120px) {
+    .secondaryImageContainer{
+        gap: 3rem;
     }
 }

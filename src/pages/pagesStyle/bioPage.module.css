@@ -4,7 +4,7 @@
     align-items: center;
 }
 .imgPresentacion{
-    width: 90vw;
+    width: 100vw;
     height: auto;
 }
 .textoBioPage{
@@ -16,10 +16,4 @@
 }
 .nombreBio{
     text-decoration: underline aqua .2rem;
-}
-
-@media (min-width:768px){
-    .imgPresentacion{
-        height: 65vh;
-    }
 }

@@ -6,7 +6,7 @@
     width: 2rem; 
     height: 1.5rem;
     cursor: pointer; 
-    z-index: 100; 
+    z-index: 800; 
 }
 
 /* Estilo para las barras del menu hamburguesa */
@@ -44,9 +44,10 @@
     width: 170px; 
     background-color: #ffffff;
     flex-direction: column; 
-    z-index: 50; 
+    z-index: 790; 
     pointer-events: none; /* Evita la interacción cuando está oculto */
     transition: right 0.3s ease; /* Transición suave */
+    height: 100%;
 }
 
 .sidebar.open {
@@ -61,6 +62,7 @@
     margin: 0;
     margin-top: 5rem;
     margin-right: 1.5rem;
+    height: 100%;
 }
 
 .sidebarMenu li {
@@ -107,7 +109,7 @@
     right: 0;
     bottom: 0; /* Establece que el overlay cubra toda el área visible */
     background: rgba(205, 205, 205, 0.5); /* Fondo semi-transparente gris claro */
-    z-index: 40; /* Asegura que el overlay esté por encima de otros elementos con índice menor, pero debajo del menú */
+    z-index: 780; /* Asegura que el overlay esté por encima de otros elementos con índice menor, pero debajo del menú */
     height: 100vh;
 }
 

@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage'
 import FaQPage from './pages/FaQPage'
 import ArtDetail from "./pages/ArtDetail";
 import Whatsapp from "./components/whatsappComponent/Whatsapp";
+import Footer from "./components/footerComponents/Footer";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         </Routes>
         </div>
         <Whatsapp />
+        <Footer />
       </div>
     </>
   );

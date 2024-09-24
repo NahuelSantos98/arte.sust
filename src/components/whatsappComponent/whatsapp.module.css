@@ -12,7 +12,7 @@
     align-self: center;
     font-size: 30px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 10000;
+    z-index: 900;
     transition: all .7s;
 }
 .btnWsp:hover{
