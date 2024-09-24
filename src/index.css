@@ -1,3 +1,8 @@
+:root{
+    --turquesa: #75c5c5;
+    --azul-oscuro: #005b82;
+}
+
 *{
     margin: 0;
     padding: 0;

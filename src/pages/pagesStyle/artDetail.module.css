@@ -45,12 +45,8 @@
 .modalImage {
     max-width: 90%;
     max-height: 90%;
-    transition: transform 0.3s ease;
 }
 
-.hidden {
-    display: none;
-}
 /* .logoIsotipo{
     position: fixed;
     bottom: 1rem;
