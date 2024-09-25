@@ -24,6 +24,7 @@ function App() {
           <Route path={routes.faq} element={<FaQPage />} />
           <Route path={routes.contact} element={<ContactPage />} />
           <Route path={routes.artDetailWithId} element={<ArtDetail/>} />
+          <Route path="*" element={<h1>404-Page Not Found</h1>} />
         </Routes>
         </div>
         <Whatsapp />

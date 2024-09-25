@@ -8,7 +8,7 @@ import { LanguageContextProvider } from './context/languageContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LanguageContextProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/Nahuel/AppReact/dist/index.html">
       <App />
     </BrowserRouter>
     </LanguageContextProvider>
