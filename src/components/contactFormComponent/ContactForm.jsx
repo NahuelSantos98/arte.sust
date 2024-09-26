@@ -8,7 +8,7 @@ const ContactForm = () => {
     const { state } = useContext(LanguageContext)
     const isEnglish = state.language
     const { register, handleSubmit, formState: { errors }, watch } = useForm()
-    const [sent, setSent] = useState(true)
+    const [sent, setSent] = useState(false)
 
     const commentValue = watch("Comment", "")
     const lengthComment = commentValue.length
