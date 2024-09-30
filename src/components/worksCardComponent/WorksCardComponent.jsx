@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Loading from '../loadingComponent/Loading'
+import style from './worksCardComponent.module.css'
 
 const WorksCardComponent = ({ item }) => {
-  const { principalImage, name, fifthImage } = item;
+  const { principalImage, name } = item;
   
   const [loading, setLoading] = useState(true);
 
@@ -11,15 +12,16 @@ const WorksCardComponent = ({ item }) => {
   };
 
   return (
-    <div>
-      {loading && <Loading /> }
+    <>
+      {loading && <div className={style.loadingDiv}><Loading /></div> }
       <img 
         src={principalImage} 
-        style={{ width: '20rem', height: '20rem', display: loading ? 'none' : 'block' }} 
+        style={{display: loading ? 'none' : 'block' }} 
+        className={style.imageArtwork}
         onLoad={handleImageLoad} 
         alt={name}
       /> 
-    </div>
+    </>
   );
 };
 

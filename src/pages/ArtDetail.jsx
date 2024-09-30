@@ -4,11 +4,20 @@ import style from './pagesStyle/artDetail.module.css';
 import { useContext, useState } from 'react';
 import { LanguageContext } from '../context/languageContext';
 import isotipo from '../utils/img/Isotipo-Final.jpg'
+import Loading from '../components/loadingComponent/Loading'
 
 const ArtDetail = () => {
     const { state } = useContext(LanguageContext);
     const isEnglish = state.language;
     const { id } = useParams();
+    
+    // // Estado para las imágenes cargadas
+    // const [loadedImages, setLoadedImages] = useState({
+    //     secondImage: false,
+    //     thirdImage: false,
+    //     fourthImage: false,
+    //     fifthImage: false
+    // });
 
     const searchedArt = data.find(obra => obra.id === parseInt(id));
     const {
@@ -37,47 +46,76 @@ const ArtDetail = () => {
         setSelectedImage(null);
     };
 
+    // const handleImageLoad = (imageName) => {
+    //     setLoadedImages(prevState => ({
+    //         ...prevState,
+    //         [imageName]: true
+    //     }));
+    // };
+
     return (
         <section className={style.artDetailContainer}>
             <img
-                src={principalImage}
+                src={fifthImage}
                 className={style.pricipalImage}
-                onClick={() => openModal(principalImage)}
+                onClick={() => openModal(fifthImage)}
                 alt={name}
             />
-            <h2>{name}</h2>
-            <p>{isEnglish ? englishTechnique : technique}</p>
+
+            <h2 className={style.detailTtile}>{name}</h2>
+            <p  className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
             <p>{size}</p>
             <p>${price} - {priceUsd} USD</p>
             <div className={style.secondaryImageContainer}>
+
+                {/* {!loadedImages.secondImage && <div className={style.centerLoading}><Loading /></div>} */}
                 <img
                     src={secondImage}
                     className={style.imageArt}
+                    // style={{ display: loadedImages.secondImage ? 'block' : 'none' }}
                     onClick={() => openModal(secondImage)}
+                    // onLoad={() => handleImageLoad('secondImage')}
                     alt="Second artwork"
                 />
+                
+                {/* {!loadedImages.thirdImage && <div className={style.centerLoading}><Loading /></div>} */}
                 <img
                     src={thirdImage}
                     className={style.imageArt}
+                    // style={{ display: loadedImages.thirdImage ? 'block' : 'none' }}
                     onClick={() => openModal(thirdImage)}
+                    // onLoad={() => handleImageLoad('thirdImage')}
                     alt="Third artwork"
                 />
+                
                 {fourthImage && (
-                    <img
-                        src={fourthImage}
-                        className={style.imageArt}
-                        onClick={() => openModal(fourthImage)}
-                        alt="Fourth artwork"
-                    />
+                    <>
+                        {/* {!loadedImages.fourthImage && <div className={style.centerLoading}><Loading /></div>} */}
+                        <img
+                            src={fourthImage}
+                            className={style.imageArt}
+                            // style={{ display: loadedImages.fourthImage ? 'block' : 'none' }}
+                            onClick={() => openModal(fourthImage)}
+                            // onLoad={() => handleImageLoad('fourthImage')}
+                            alt="Fourth artwork"
+                        />
+                    </>
                 )}
+
+                {/* {!loadedImages.fifthImage && <div className={style.centerLoading}><Loading /></div>} */}
                 <img
-                    src={fifthImage}
+                    src={principalImage}
                     className={style.imageArt}
-                    onClick={() => openModal(fifthImage)}
+                    // style={{ display: loadedImages.fifthImage ? 'block' : 'none' }}
+                    onClick={() => openModal(principalImage)}
+                    // onLoad={() => handleImageLoad('fifthImage')}
                     alt="Fifth artwork"
                 />
             </div>
-            <p className={style.descriptionArt}>{isEnglish ? englishDescription : description}</p>
+            <article className={style.descriptionDetailContainer}>
+            <p>{isEnglish ? englishDescription : description}</p>
+            </article>
+        
 
             {selectedImage && (
                 <article className={style.modalOverlay} onClick={closeModal}>

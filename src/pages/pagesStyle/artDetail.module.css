@@ -1,3 +1,5 @@
+@import '../../index.css';
+
 .artDetailContainer {
     margin: 3rem;
     display: flex;
@@ -13,7 +15,6 @@
 .imageArt {
     width: 10rem;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 .secondaryImageContainer {
@@ -22,6 +23,9 @@
     align-items: center;
     gap: 3rem;
     margin-bottom: 2rem;
+}
+.centerLoading{
+    align-content: center;
 }
 
 .descriptionArt {
@@ -47,6 +51,23 @@
     max-height: 90%;
 }
 
+.detailTtile{
+    text-decoration: underline var(--turquesa) 5px;
+    font-size: 2rem;
+}
+.detailTechnique{
+    text-align: center;
+}
+
+.infoDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+
 /* .logoIsotipo{
     position: fixed;
     bottom: 1rem;
@@ -54,9 +75,9 @@
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-} */
+}  */
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .artDetailContainer{
         margin-top: 1rem;
     }
@@ -76,9 +97,18 @@
     .imageArt {
         width: 10rem;
     }
+
+    .descriptionDetailContainer{
+        width: 70vw;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
-@media (min-width: 120px) {
+@media (min-width: 1200px) {
     .secondaryImageContainer{
         gap: 3rem;
     }
