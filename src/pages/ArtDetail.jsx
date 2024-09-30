@@ -38,7 +38,7 @@ const ArtDetail = () => {
     };
 
     return (
-        <div className={style.artDetailContainer}>
+        <section className={style.artDetailContainer}>
             <img
                 src={principalImage}
                 className={style.pricipalImage}
@@ -80,12 +80,12 @@ const ArtDetail = () => {
             <p className={style.descriptionArt}>{isEnglish ? englishDescription : description}</p>
 
             {selectedImage && (
-                <div className={style.modalOverlay} onClick={closeModal}>
+                <article className={style.modalOverlay} onClick={closeModal}>
                     <img src={selectedImage} className={style.modalImage} alt="Selected Image" />
                     {/* <img src={isotipo} alt='Isotipo' className={style.logoIsotipo}/> */}
-                </div>
+                </article>
             )}
-        </div>
+        </section>
     );
 };
 
