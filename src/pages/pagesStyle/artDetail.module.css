@@ -77,6 +77,26 @@
     border-radius: 50%;
 }  */
 
+.prevButton, .nextButton {
+    position: absolute;
+    top: 80%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #000;
+}
+
+.prevButton {
+    left: 1rem;
+}
+
+.nextButton {
+    right: 1rem;
+}
+
+
 @media (min-width: 769px) {
     .artDetailContainer{
         margin-top: 1rem;
@@ -104,6 +124,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .prevButton, .nextButton{
+        top: 50%;
     }
 
 }

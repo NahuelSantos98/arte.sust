@@ -10,7 +10,7 @@ const ContactForm = () => {
     const { register, handleSubmit, formState: { errors }, watch } = useForm()
     const [sent, setSent] = useState(false)
 
-    const commentValue = watch("Comment", "")
+    const commentValue = watch("comment", "")
     const lengthComment = commentValue.length
 
     const refForm = useRef()
