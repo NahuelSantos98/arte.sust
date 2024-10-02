@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbarComponent/Navbar";
-// import HomePage from "./pages/HomePage";
 import { routes } from "./utils/route";
 import BioPage from './pages/BioPage'
 import ArtWorksPage from './pages/ArtWorksPage'
@@ -9,6 +8,7 @@ import FaQPage from './pages/FaQPage'
 import ArtDetail from "./pages/ArtDetail";
 import Whatsapp from "./components/whatsappComponent/Whatsapp";
 import Footer from "./components/footerComponents/Footer";
+import ScrollToTop from "./utils/scrollToTop";
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
       <div className="app-container">
         <Navbar/>
         <div className="content">
+        <ScrollToTop>
         <Routes>
           {/* <Route path={routes.home} element={<HomePage />} /> */}
           <Route path={routes.bio} element={<BioPage />} />
@@ -26,6 +27,7 @@ function App() {
           <Route path={routes.artDetailWithId} element={<ArtDetail/>} />
           <Route path="*" element={<h1>404-Page Not Found</h1>} />
         </Routes>
+        </ScrollToTop>
         </div>
         <Whatsapp />
         <Footer />

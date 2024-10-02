@@ -1,0 +1,69 @@
+@import '../../index.css';
+
+
+.faqContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cardQuestions{
+    width: auto;
+    max-width: 90vw;
+    border: solid 3px var(--turquesa);
+}
+
+.cardQuestions h3{
+    text-align: center;
+    color: var(--azul-oscuro);
+}
+
+.containerPreguntas{
+    border-top: solid 3px var(--turquesa);
+    padding: .5rem;
+}
+
+.listQuestions {
+    list-style-position: inside;
+    margin-left: .5rem;
+}
+.questionAnswerContainer{
+    width: 90vw;
+    /* margin: 3rem 0; */
+}
+.questionItem{
+    cursor: pointer;
+}
+
+.infoQuestion{
+    margin-top: 3rem;
+}
+
+.infoQuestion h3{
+    text-decoration: underline;
+    color: var(--azul-oscuro);
+}
+
+.infoQuestion p{
+    text-align: justify;
+}
+
+.linkToContact{
+    color: var(--azul-oscuro);
+    text-align: center;
+    text-decoration: none;
+}
+
+.linkToContact h4{
+    margin-top: 2rem;
+}
+
+
+@media (min-width:769px){
+    .cardQuestions{
+        width: auto;
+        max-width: 70vw;
+    }
+}
