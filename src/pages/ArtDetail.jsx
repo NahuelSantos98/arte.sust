@@ -28,6 +28,7 @@ const ArtDetail = () => {
         fifthImage,
         size,
         priceUsd,
+        dispo
     } = searchedArt;
 
     // Array con todas las imágenes para navegar
@@ -70,6 +71,7 @@ const ArtDetail = () => {
             />
 
             <h2 className={style.detailTtile}>{name}</h2>
+            <p className={style.dispo}>{!dispo? "Vendido/Reservado" : "" }</p>
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
             <p>{size}</p>
             <p>${price} - {priceUsd} USD</p>
@@ -114,7 +116,6 @@ const ArtDetail = () => {
                     <img src={selectedImage} className={style.modalImage} alt="Selected Image" />
                     <button onClick={showNextImage} className={style.nextButton}><IoMdArrowRoundForward />
                     </button>
-
                     <span className={style.crossCloseModal} onClick={closeModal}><CgClose /></span>
                 </article>
             )}
