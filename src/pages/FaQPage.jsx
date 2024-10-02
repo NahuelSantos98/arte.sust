@@ -46,7 +46,7 @@ const FaQPage = () => {
           </div>
         ))}
         
-        <Link to={routes.contact} className={style.linkToContact}><h4>{isEnglish? "If you have another or more questions, go to Contact Page" : "Si tenes otra o mas dudas, andá a la pagina de Contacto "}</h4></Link>
+        <Link to={routes.contact} className={style.linkToContact}><h4>{isEnglish? "If you have any other questions, feel free to contact me." : "Si tenés alguna otra consulta no dudes en contactarme."}</h4></Link>
       </section>
     </div>
   )

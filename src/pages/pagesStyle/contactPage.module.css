@@ -32,6 +32,9 @@
 font-size: 2rem;
 }
 
+.thanksContact{
+    margin-top: .5rem;
+}
 
 @media (min-width:768px){
     .imageAndTextContainer{

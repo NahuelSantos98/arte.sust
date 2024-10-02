@@ -6,7 +6,7 @@ import { LanguageContext } from '../context/languageContext';
 import isotipo from '../utils/img/Isotipo-Final.jpg';
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { IoMdArrowRoundForward } from "react-icons/io";
-
+import { CgClose } from "react-icons/cg";
 
 const ArtDetail = () => {
     const { state } = useContext(LanguageContext);
@@ -114,6 +114,8 @@ const ArtDetail = () => {
                     <img src={selectedImage} className={style.modalImage} alt="Selected Image" />
                     <button onClick={showNextImage} className={style.nextButton}><IoMdArrowRoundForward />
                     </button>
+
+                    <span className={style.crossCloseModal} onClick={closeModal}><CgClose /></span>
                 </article>
             )}
         </section>
