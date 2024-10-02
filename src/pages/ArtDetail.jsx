@@ -4,7 +4,9 @@ import style from './pagesStyle/artDetail.module.css';
 import { useContext, useState } from 'react';
 import { LanguageContext } from '../context/languageContext';
 import isotipo from '../utils/img/Isotipo-Final.jpg';
-import Loading from '../components/loadingComponent/Loading';
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { IoMdArrowRoundForward } from "react-icons/io";
+
 
 const ArtDetail = () => {
     const { state } = useContext(LanguageContext);
@@ -108,9 +110,10 @@ const ArtDetail = () => {
 
             {selectedImage && (
                 <article className={style.modalOverlay} onClick={closeModal}>
-                    <button onClick={showPreviousImage} className={style.prevButton}>◀</button>
+                    <button onClick={showPreviousImage} className={style.prevButton}><IoMdArrowRoundBack /></button>
                     <img src={selectedImage} className={style.modalImage} alt="Selected Image" />
-                    <button onClick={showNextImage} className={style.nextButton}>▶</button>
+                    <button onClick={showNextImage} className={style.nextButton}><IoMdArrowRoundForward />
+                    </button>
                 </article>
             )}
         </section>

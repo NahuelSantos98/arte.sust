@@ -31,7 +31,6 @@
 }
 .questionAnswerContainer{
     width: 90vw;
-    /* margin: 3rem 0; */
 }
 .questionItem{
     cursor: pointer;
@@ -40,6 +39,7 @@
 .infoQuestion{
     margin-top: 3rem;
 }
+
 
 .infoQuestion h3{
     text-decoration: underline;

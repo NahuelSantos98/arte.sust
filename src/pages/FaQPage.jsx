@@ -10,11 +10,18 @@ const FaQPage = () => {
   const isEnglish = state.language
 
   const handleScroll = (id) => {
-    const element = document.getElementById(`${id}`);
+    const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - (window.innerHeight / 2) + (element.offsetHeight / 2);
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
+  
+  
 
   return (
     <div className={style.faqContainer}>
