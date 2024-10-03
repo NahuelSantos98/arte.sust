@@ -137,6 +137,10 @@
     border-radius: 50%;
 }
 
+.descriptionDetailContainer{
+    white-space: pre-line;
+}
+
 @media (min-width: 769px) {
     .artDetailContainer{
         margin-top: 1rem;
@@ -164,7 +168,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        white-space: pre-line;
     }
 
     .prevButton, .nextButton{
