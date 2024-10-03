@@ -50,14 +50,25 @@
     text-align: justify;
 }
 
+.contactArticle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .linkToContact{
     color: var(--azul-oscuro);
-    text-align: center;
     text-decoration: none;
 }
 
-.linkToContact h4{
+.linkToContact p{
+    font-size: 1.3rem;
     margin-top: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
 }
 
 

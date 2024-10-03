@@ -1,6 +1,71 @@
 export const data = [
     {
         id: 1,
+        name: 'Esencia',
+        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia1.jpg',
+        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia2.jpg',
+        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia3.jpg',
+        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia4.jpg',
+        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia5.jpg',
+        description: 'Siento que ésta obra me representa, que volqué en la tela mi esencia. \nEn la vorágine de la vida si me tomo un momento para cerrar los ojos y me dejo llevar, veo mi silueta representada en pinceladas; soy arte, soy creación, la artista de mi propia vida. Y en ese contexto siento paz, calma y serenidad.\nLa obra está presentada con marco flotante de Kiri en color negro.\nEstá expuesta en la muestra Percepciones en Galería Zero168.',
+        englishDescription: "I feel that this artwork represents me, that I poured my essence onto the canvas.\nIn the whirlwind of life, if I take a moment to close my eyes and let myself go, I see my silhouette represented in brushstrokes; I am art, I am creation, the artist of my own life. And in that context, I feel peace, calm, and serenity.\nThe artwork is presented in a black kiri floating frame.\nIt is exhibited in the Percepciones show at Gallery Zero618.",
+        technique: "Acrílicos.",
+        englishTechnique: 'Acrylics.',
+        price: 0,
+        priceUsd: 0,
+        size: '60 x 80 cm',
+        dispo: true
+    }, {
+        id: 2,
+        name: 'Percepcion 2',
+        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-1.jpg',
+        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-2.jpg',
+        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-3.jpg',
+        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-4.jpg',
+        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-5.jpg',
+        description: 'Ésta obra es la tercera que creo de la serie Percepción, aunque cada una tiene una magia especial. En este caso, las texturas y reflejos en su tamaño resultan impactantes.\n\nLa importancia de entregarse a las sensaciones y a la forma en que la obra nos atraviesa.\nDonde algunos pueden ver y sentir la inmersión hacia el fondo, otros como yo podemos ver el impulso hacia el reflejo, la luz, la cima.\nÉsta obra invita a despertar los sentidos, apreciar los relieves, sentir la textura, ver la luz y la sombra.\nEstá presentada en marco flotante de Kiri negro.\nLa obra está siendo expuesta en Palacio Barolo durante el mes de Octubre 2024.',
+        englishDescription: "This is the third piece I’ve created in the Percepción series, although each one has its own special magic. In this case, the textures and reflections, in its size, are striking.\nThe importance lies in surrendering to the sensations and the way the artwork moves through us.\nWhere some may see and feel an immersion into the depths, others, like me, may see the drive toward the reflection, the light, the peak.\nThis artwork invites you to awaken your senses, appreciate the reliefs, feel the texture, and observe the interplay of light and shadow.\nIt is presented in a black kiri floating frame.\nThe artwork is being exhibited at Palacio Barolo during October 2024.",
+        technique: "Acrílicos y pasta de relieve.",
+        englishTechnique: 'Acrylics and relief paste.',
+        price: 0,
+        priceUsd: 0,
+        size: '80 x 120 cm',
+        dispo: true
+    }, {
+        id: 3,
+        name: 'Aurora',
+        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora1.jpg',
+        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora2.jpg',
+        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora3.jpg',
+        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora4.jpg',
+        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora5.jpg',
+        description: 'Inspirada en los primeros rayos de sol que interrumpen la oscuridad de la noche para dar comienzo a un nuevo día, ésta obra poderosa juega con relieves, reflejos y brillo. \nEl negro es la ausencia de luz, y a la vez es la mezcla de todos los colores; transmite poder, formalidad, misterio, fuerza... Y si al negro lo cortamos con el dorado, que representa la luz, conseguimos un balance muy poderoso e interesante.\nLa obra está presentada con marco flotante de kiri color negro.\nEstá siendo expuesta en Palacio Barolo durante el mes de Octubre 2024.',
+        englishDescription: "Inspired by the first rays of sunlight that break through the darkness of the night to start a new day, this powerful piece plays with reliefs, reflections, and shine.\nBlack is the absence of light, yet it is also the combination of all colors; it conveys power, formality, mystery, strength... And if we cut through the black with gold, which represents light, we achieve a very powerful and interesting balance.\nThe artwork is presented in a black kiri floating frame.\nit is being exhibited at Palacio Barolo during October 2024.",
+        technique: 'Acrílicos, texturas y laminas de oro.',
+        englishTechnique: "Acrylics, textures, and gold leaf.",
+        price: 0,
+        priceUsd: 0,
+        size: '80 x 120 cm',
+        dispo: true
+    }, {
+        id: 4,
+        name: 'Luz de luna',
+        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna1.jpg',
+        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna2.jpg',
+        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna3.jpg',
+        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna4.jpg',
+        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna5.jpg',
+        description: 'Una de las cosas que más me gustan, además del mar, es la Luna. Me apasiona seguir sus cambios y los momentos en que se la ve salir gigante de atrás de los edificios.\nEn esta fascinación me inspiré para crear ésta obra que combina lo abstracto y lo figurativo en colores neutros que se adaptan a cualquier espacio.\nLa obra tiene marco flotante de Kiri color negro.\nParticipó de la muestra Percepciones en Galería Zero168.',
+        englishDescription: "One of the things I love most, besides the sea, is the Moon. I am passionate about observing its changes and the moments when it rises, enormous, behind the buildings.\nThis fascination inspired me to create this artwork that combines the abstract and the figurative in neutral colors that adapt to any space.\nThe artwork has a black kiri floating frame.\nIt participated in the Percepciones show at Gallery Zero618.",
+        technique: 'Acrílicos y relieves.',
+        englishTechnique: "Acrylics and reliefs.",
+        price: 0,
+        priceUsd: 0,
+        size: '80 x 120 cm',
+        dispo: true,
+    },
+    {
+        id: 5,
         name: 'Turmalina',
         principalImage: "http://www.artesust.com.ar/ImageSabrinaRecortadas/Turmalina/Turmalina1.jpg",
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Turmalina/Turmalina2.jpeg',
@@ -17,7 +82,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 2,
+        id: 6,
         name: 'Atardecer',
         principalImage: "http://www.artesust.com.ar/ImageSabrinaRecortadas/Atardecer/Atardecer1.jpg",
         secondImage: "http://www.artesust.com.ar/ImageSabrinaRecortadas/Atardecer/Atardecer2.jpeg",
@@ -33,7 +98,7 @@ export const data = [
         dispo: false
     },
     {
-        id: 3,
+        id: 7,
         name: 'Profundidad',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Profundidad/Profundidad1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Profundidad/Profundidad2.jpeg',
@@ -50,7 +115,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 4,
+        id: 8,
         name: 'Eternidad',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Eternidad/Eternidad1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Eternidad/Eternidad2.jpeg',
@@ -67,7 +132,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 5,
+        id: 9,
         name: 'La Ola Magnetica',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/OlaMagnetica/OlaMagnetica1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/OlaMagnetica/OlaMagnetica2.jpeg',
@@ -84,7 +149,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 6,
+        id: 10,
         name: 'Ritmo',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Ritmo/Ritmo1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Ritmo/Ritmo2.jpeg',
@@ -101,7 +166,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 7,
+        id: 11,
         name: 'El Cambio',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ElCambio/ElCambio1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ElCambio/ElCambio2.jpeg',
@@ -118,7 +183,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 8,
+        id: 12,
         name: 'Trazos',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Trazos/Trazos1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Trazos/Trazos2.jpeg',
@@ -135,7 +200,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 9,
+        id: 13,
         name: 'Arena Dorada',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ArenaDorada/ArenaDorada1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ArenaDorada/ArenaDorada2.jpeg',
@@ -152,7 +217,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 10,
+        id: 14,
         name: 'Profundidad Contemporánea',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ProfundidadContemporanea/ProfContemporanea1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ProfundidadContemporanea/ProfContemporanea2.jpeg',
@@ -169,7 +234,7 @@ export const data = [
         dispo: false,
     },
     {
-        id: 11,
+        id: 15,
         name: 'Caminos',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Caminos/Caminos1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Caminos/Caminos2.jpeg',
@@ -186,7 +251,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 12,
+        id: 16,
         name: 'Libertad',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Libertad/Libertad1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Libertad/Libertad2.jpeg',
@@ -203,7 +268,7 @@ export const data = [
         dispo: true,
     },
     {
-        id: 13,
+        id: 17,
         name: 'Golden',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Golden/Golden1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Golden/Golden2.jpeg',
@@ -220,7 +285,7 @@ export const data = [
         dispo: false,
     },
     {
-        id: 14,
+        id: 18,
         name: 'Destello',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Destello/Destello1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Destello/Destello2.jpeg',
@@ -237,7 +302,7 @@ export const data = [
         dispo: false,
     },
     {
-        id: 15,
+        id: 19,
         name: 'La Noche Estrellada',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LaNocheEstrellada/NocheEstrellada1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LaNocheEstrellada/NocheEstrellada2.jpeg',
@@ -254,7 +319,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 16,
+        id: 20,
         name: 'Percepción',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion/Percepcion1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion/Percepcion2.jpeg',
@@ -271,7 +336,7 @@ export const data = [
         dispo: false
     },
     {
-        id: 17,
+        id: 21,
         name: 'El Resplandor',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ElResplandor/ElResplandor1.jpeg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/ElResplandor/ElResplandor2.jpeg',
@@ -288,7 +353,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 18,
+        id: 22,
         name: 'Tierra',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Tierra/Tierra1.jpeg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Tierra/Tierra2.jpeg',
@@ -305,7 +370,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 19,
+        id: 23,
         name: 'Alma Revuelta',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/AlmaRevuelta/AlmaRevuelta1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/AlmaRevuelta/AlmaRevuelta2.jpg',
@@ -322,7 +387,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 20,
+        id: 24,
         name: 'Esmeralda',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esmeralda/Esmeralda1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esmeralda/Esmeralda2.jpeg',
@@ -339,7 +404,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 21,
+        id: 25,
         name: 'Espejo Marino',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/EspejoMarino/EspejoMarino1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/EspejoMarino/EspejoMarino2.jpeg',
@@ -356,7 +421,7 @@ export const data = [
         dispo: true
     },
     {
-        id: 22,
+        id: 26,
         name: 'Reflejos',
         principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Reflejos/Reflejos1.jpg',
         secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Reflejos/Reflejos2.jpeg',
@@ -371,70 +436,6 @@ export const data = [
         priceUsd: 20,
         size: '40 x 30 cm',
         dispo: true
-    }, {
-        id: 23,
-        name: 'Esencia',
-        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia1.jpg',
-        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia2.jpg',
-        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia3.jpg',
-        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia4.jpg',
-        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia5.jpg',
-        description: 'Siento que ésta obra me representa, que volqué en la tela mi esencia. \nEn la vorágine de la vida si me tomo un momento para cerrar los ojos y me dejo llevar, veo mi silueta representada en pinceladas; soy arte, soy creación, la artista de mi propia vida. Y en ese contexto siento paz, calma y serenidad.\nLa obra está presentada con marco flotante de Kiri en color negro.\nEstá expuesta en la muestra Percepciones en Galería Zero168.',
-        englishDescription: "I feel that this artwork represents me, that I poured my essence onto the canvas.\nIn the whirlwind of life, if I take a moment to close my eyes and let myself go, I see my silhouette represented in brushstrokes; I am art, I am creation, the artist of my own life. And in that context, I feel peace, calm, and serenity.\nThe artwork is presented in a black kiri floating frame.\nIt is exhibited in the Percepciones show at Gallery Zero618.",
-        technique: "Acrílicos.",
-        englishTechnique: 'Acrylics.',
-        price: 0,
-        priceUsd: 0,
-        size: '60 x 60 cm',
-        dispo: true
-    }, {
-        id: 24,
-        name: 'Percepcion 2',
-        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-1.jpg',
-        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-2.jpg',
-        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-3.jpg',
-        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-4.jpg',
-        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-5.jpg',
-        description: 'Ésta obra es la tercera que creo de la serie Percepción, aunque cada una tiene una magia especial. En este caso, las texturas y reflejos en su tamaño resultan impactantes.\n\nLa importancia de entregarse a las sensaciones y a la forma en que la obra nos atraviesa.\nDonde algunos pueden ver y sentir la inmersión hacia el fondo, otros como yo podemos ver el impulso hacia el reflejo, la luz, la cima.\nÉsta obra invita a despertar los sentidos, apreciar los relieves, sentir la textura, ver la luz y la sombra.\nEstá presentada en marco flotante de Kiri negro.\nLa obra está siendo expuesta en Palacio Barolo durante el mes de Octubre 2024.',
-        englishDescription: "This is the third piece I’ve created in the Percepción series, although each one has its own special magic. In this case, the textures and reflections, in its size, are striking.\nThe importance lies in surrendering to the sensations and the way the artwork moves through us.\nWhere some may see and feel an immersion into the depths, others, like me, may see the drive toward the reflection, the light, the peak.\nThis artwork invites you to awaken your senses, appreciate the reliefs, feel the texture, and observe the interplay of light and shadow.\nIt is presented in a black kiri floating frame.\nThe artwork is being exhibited at Palacio Barolo during October 2024.",
-        technique: "Acrílicos y pasta de relieve.",
-        englishTechnique: 'Acrylics and relief paste.',
-        price: 0,
-        priceUsd: 0,
-        size: '80 x 120 cm',
-        dispo: true
-    }, {
-        id: 25,
-        name: 'Aurora',
-        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora1.jpg',
-        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora2.jpg',
-        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora3.jpg',
-        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora4.jpg',
-        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora5.jpg',
-        description: 'Inspirada en los primeros rayos de sol que interrumpen la oscuridad de la noche para dar comienzo a un nuevo día, ésta obra poderosa juega con relieves, reflejos y brillo. \nEl negro es la ausencia de luz, y a la vez es la mezcla de todos los colores; transmite poder, formalidad, misterio, fuerza... Y si al negro lo cortamos con el dorado, que representa la luz, conseguimos un balance muy poderoso e interesante.\nLa obra está presentada con marco flotante de kiri color negro.\nEstá siendo expuesta en Palacio Barolo durante el mes de Octubre 2024.',
-        englishDescription: "Inspired by the first rays of sunlight that break through the darkness of the night to start a new day, this powerful piece plays with reliefs, reflections, and shine.\nBlack is the absence of light, yet it is also the combination of all colors; it conveys power, formality, mystery, strength... And if we cut through the black with gold, which represents light, we achieve a very powerful and interesting balance.\nThe artwork is presented in a black kiri floating frame.\nit is being exhibited at Palacio Barolo during October 2024.",
-        technique: 'Acrílicos, texturas y laminas de oro.',
-        englishTechnique: "Acrylics, textures, and gold leaf.",
-        price: 0,
-        priceUsd: 0,
-        size: '80 x 120 cm',
-        dispo: true
-    }, {
-        id: 26,
-        name: 'Luz de luna',
-        principalImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna1.jpg',
-        secondImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna2.jpg',
-        thirdImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna3.jpg',
-        fourthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna4.jpg',
-        fifthImage: 'http://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna5.jpg',
-        description: 'Una de las cosas que más me gustan, además del mar, es la Luna. Me apasiona seguir sus cambios y los momentos en que se la ve salir gigante de atrás de los edificios.\nEn esta fascinación me inspiré para crear ésta obra que combina lo abstracto y lo figurativo en colores neutros que se adaptan a cualquier espacio.\nLa obra tiene marco flotante de Kiri color negro.\nParticipó de la muestra Percepciones en Galería Zero168.',
-        englishDescription: "One of the things I love most, besides the sea, is the Moon. I am passionate about observing its changes and the moments when it rises, enormous, behind the buildings.\nThis fascination inspired me to create this artwork that combines the abstract and the figurative in neutral colors that adapt to any space.\nThe artwork has a black kiri floating frame.\nIt participated in the Percepciones show at Gallery Zero618.",
-        technique: 'Acrílicos y relieves.',
-        englishTechnique: "Acrylics and reliefs.",
-        price: 0,
-        priceUsd: 0,
-        size: '80 x 120 cm',
-        dispo: true,
     }
 ]
 

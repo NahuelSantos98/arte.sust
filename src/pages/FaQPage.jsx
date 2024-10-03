@@ -4,6 +4,7 @@ import {faq} from '../utils/faq'
 import {Link} from 'react-router-dom'
 import {routes} from '../utils/route'
 import style from './pagesStyle/faqPage.module.css'
+import { TiArrowForward } from "react-icons/ti";
 
 const FaQPage = () => {
   const {state} = useContext(LanguageContext)
@@ -46,7 +47,10 @@ const FaQPage = () => {
           </div>
         ))}
         
-        <Link to={routes.contact} className={style.linkToContact}><h4>{isEnglish? "If you have any other questions, feel free to contact me." : "Si tenés alguna otra consulta no dudes en contactarme."}</h4></Link>
+        <article className={style.contactArticle}>
+        <Link to={routes.contact} className={style.linkToContact}><p>{isEnglish? "If you have any other questions, feel free to contact me." : "Si tenés alguna otra consulta no dudes en contactarme."}<span><TiArrowForward /></span></p></Link>
+        </article>
+       
       </section>
     </div>
   )
