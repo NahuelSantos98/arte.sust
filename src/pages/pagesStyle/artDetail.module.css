@@ -93,6 +93,7 @@
     justify-content: center;
     border-radius: 50%;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .prevButton {
@@ -113,13 +114,27 @@
     width: 2.5rem;
     text-align: center;
     cursor: pointer;
-    background-color: var(--azul-oscuro);
-    color: white;
+    background: rgb(58, 58, 58);
+    color: #d4cdcd;
+}
+
+.soldContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }
 
 .dispo{
     font-weight: bold;
     color: red;
+}
+
+.circleSold{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: red;
+    border-radius: 50%;
 }
 
 @media (min-width: 769px) {
@@ -149,6 +164,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        white-space: pre-line;
     }
 
     .prevButton, .nextButton{

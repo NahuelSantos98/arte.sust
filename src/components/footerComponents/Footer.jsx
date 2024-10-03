@@ -26,7 +26,7 @@ const Footer = () => {
 
 
         <section className={style.infoFooter}>
-          <p>sabysust@gmail.com</p>
+          <p>info@artesust.com.ar</p>
           <p>+54 9 11 6184-3236 </p>
         </section>
       </div>

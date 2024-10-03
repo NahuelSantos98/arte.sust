@@ -71,7 +71,7 @@ const ArtDetail = () => {
             />
 
             <h2 className={style.detailTtile}>{name}</h2>
-            <p className={style.dispo}>{!dispo? "Vendido/Reservado" : "" }</p>
+            {!dispo && <div className={style.soldContainer}><span className={style.circleSold}></span><p className={style.dispo}>{isEnglish? "Sold/Reserved" : "Vendido/Reservado"}</p></div>}
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
             <p>{size}</p>
             <p>${price} - {priceUsd} USD</p>

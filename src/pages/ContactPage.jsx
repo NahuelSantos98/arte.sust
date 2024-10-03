@@ -16,7 +16,7 @@ const ContactPage = () => {
         <img src={FotoContacto} alt="Foto Sabrina Sust" className={style.imageContact} />
         <div className={style.textContainerContact}>
           <h3>{isEnglish ? "Contact me!" : "Contactate conmigo!" }</h3>
-          <p>{isEnglish ? 'If you have any questions or inquiries, you can fill out the contact form, and I will get back to you shortly.' : 'Si tenés dudas/consultas podés completar el formulario de contacto y a la brebedad me pondré en contacto con vos.'} </p>
+          <p>{isEnglish ? 'If you have any questions or inquiries, you can fill out the contact form, and I will get back to you shortly.' : 'Si tenés dudas/consultas podés completar el formulario y a la brevedad me pondré en contacto con vos.'} </p>
           <p className={style.thanksContact}>{isEnglish? 'Thanks!' : 'Gracias!'}</p>
         </div>
       </div>
