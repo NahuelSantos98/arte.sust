@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { data } from '../utils/data';
 import style from './pagesStyle/artDetail.module.css';
 import { useContext, useState } from 'react';
@@ -7,6 +7,8 @@ import isotipo from '../utils/img/Isotipo-Final.jpg';
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { CgClose } from "react-icons/cg";
+import {routes} from '../utils/route'
+import { TiArrowBack } from "react-icons/ti";
 
 const ArtDetail = () => {
     const { state } = useContext(LanguageContext);
@@ -31,7 +33,6 @@ const ArtDetail = () => {
         dispo
     } = searchedArt;
 
-    // Array con todas las imágenes para navegar
     const images = [principalImage, secondImage, thirdImage, fourthImage, fifthImage].filter(Boolean);
 
     const [selectedImage, setSelectedImage] = useState(null);
@@ -69,12 +70,12 @@ const ArtDetail = () => {
                 onClick={() => openModal(fifthImage)}
                 alt={name}
             />
-
+            <Link to={routes.artwork} className={style.goBackDetail}><span className={style.arrowIcon}><TiArrowBack /></span>Volver</Link>
             <h2 className={style.detailTtile}>{name}</h2>
             {!dispo && <div className={style.soldContainer}><span className={style.circleSold}></span><p className={style.dispo}>{isEnglish? "Sold/Reserved" : "Vendido/Reservado"}</p></div>}
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
             <p>{size}</p>
-            <p>${price} - {priceUsd} USD</p>
+            {/* <p>${price} - {priceUsd} USD</p> */}
             <div className={style.secondaryImageContainer}>
                 <img
                     src={secondImage}
@@ -109,6 +110,8 @@ const ArtDetail = () => {
             <article className={style.descriptionDetailContainer}>
                 <p>{isEnglish ? englishDescription : description}</p>
             </article>
+
+                <Link to={routes.artwork} className={style.linkArtworkDetail}><h3><span className={style.arrowIcon}><TiArrowBack /></span>Volver</h3></Link>
 
             {selectedImage && (
                 <article className={style.modalOverlay} onClick={closeModal}>

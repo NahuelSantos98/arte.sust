@@ -9,9 +9,15 @@ import ArtDetail from "./pages/ArtDetail";
 import Whatsapp from "./components/whatsappComponent/Whatsapp";
 import Footer from "./components/footerComponents/Footer";
 import ScrollToTop from "./utils/scrollToTop";
+import { useEffect } from 'react';
+import { redirectToHash } from "./utils/redirectionToHash";
 
 
 function App() {
+  useEffect(() => {
+    redirectToHash();
+  }, []);
+
   return (
     <>
       <div className="app-container">
@@ -19,7 +25,6 @@ function App() {
         <div className="content">
         <ScrollToTop>
         <Routes>
-          {/* <Route path={routes.home} element={<HomePage />} /> */}
           <Route path={routes.bio} element={<BioPage />} />
           <Route path={routes.artwork} element={<ArtWorksPage />} />
           <Route path={routes.faq} element={<FaQPage />} />

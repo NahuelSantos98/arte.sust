@@ -1,6 +1,6 @@
 import WorksList from '../worksList/WorksList'
 
-const WorksListCotainer = () => {
+const WorksListContainer = () => {
   return (
     <>
         <WorksList />
@@ -8,4 +8,4 @@ const WorksListCotainer = () => {
   )
 }
 
-export default WorksListCotainer
+export default WorksListContainer

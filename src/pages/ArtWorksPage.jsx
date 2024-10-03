@@ -1,10 +1,10 @@
-import WorksListCotainer from '../components/worksListContainer/WorksListCotainer'
+import WorksListContainer from '../components/worksListContainer/WorksListContainer'
 
 const ArtWorksPage = () => {
 
   return (
     <> 
-      <WorksListCotainer />
+      <WorksListContainer />
     </>
   )
 }

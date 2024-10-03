@@ -10,6 +10,7 @@
 
 .pricipalImage {
     width: 90vw;
+    margin-top: .5rem;
 }
 
 .imageArt {
@@ -68,7 +69,6 @@
     justify-content: center;
     gap: .5rem;
 }
-
 
 /* .logoIsotipo{
     position: fixed;
@@ -139,6 +139,22 @@
 
 .descriptionDetailContainer{
     white-space: pre-line;
+}
+
+.linkArtworkDetail, .goBackDetail{
+    text-decoration: none;
+    color: var(--azul-oscuro);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.goBackDetail{
+    position: absolute;
+    top: 14%;
+    left: 5%;
 }
 
 @media (min-width: 769px) {
