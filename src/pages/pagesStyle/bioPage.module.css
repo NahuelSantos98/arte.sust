@@ -8,6 +8,7 @@
 .imgPresentacion{
     width: 100vw;
     height: auto;
+    aspect-ratio: 21/9;
 }
 .textoBioPage{
     text-align: justify;
