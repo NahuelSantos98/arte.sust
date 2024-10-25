@@ -25,9 +25,9 @@ function App() {
         <div className="content">
         <ScrollToTop>
         <Routes>
-          <Route path={routes.bio} element={<BioPage />} />
           <Route path={routes.artwork} element={<ArtWorksPage />} />
           <Route path={routes.faq} element={<FaQPage />} />
+          <Route path={routes.bio} element={<BioPage />} />
           <Route path={routes.contact} element={<ContactPage />} />
           <Route path={routes.artDetailWithId} element={<ArtDetail/>} />
           <Route path="*" element={<h1>404-Page Not Found</h1>} />

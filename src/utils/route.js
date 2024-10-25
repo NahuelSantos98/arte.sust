@@ -1,6 +1,6 @@
 export const routes = {
-    bio: '/',
-    artwork: '/artwork',
+    bio: '/bio',
+    artwork: '/',
     faq: '/faquestions',
     contact: '/contact',
     artDetailWithId : '/detail/:id',

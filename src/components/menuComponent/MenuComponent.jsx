@@ -24,14 +24,14 @@ const MenuComponent = () => {
 
       <div className={`${style.sidebar} ${showNav ? style.open : ''}`}>
         <ul className={style.sidebarMenu}>
-          <li className={location.pathname === routes.bio ? style.selected : ''}>
-            <Link to={routes.bio}>Bio</Link>
-          </li>
-          <li className={location.pathname === routes.artwork ? style.selected : ''}>
+        <li className={location.pathname === routes.artwork ? style.selected : ''}>
             <Link to={routes.artwork}>{!isEnglish ? 'Obras' : 'Artwork'}</Link>
           </li>
           <li className={location.pathname === routes.faq ? style.selected : ''}>
             <Link to={routes.faq}>{!isEnglish ? 'Preguntas Frecuentes' : 'Frequently asked questions'}</Link>
+          </li>
+          <li className={location.pathname === routes.bio ? style.selected : ''}>
+            <Link to={routes.bio}>Biografía</Link>
           </li>
           <li className={location.pathname === routes.contact ? style.selected : ''}>
             <Link to={routes.contact}>{!isEnglish ? 'Contacto' : 'Contact'}</Link>

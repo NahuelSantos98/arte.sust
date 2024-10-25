@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className={style.containerNavbar}>
       <div className={style.logoContainer}>
-        <Link to={routes.bio}><img src={logo} alt='Logo Sabrina Sust' className={style.imageLogo}/></Link>
+        <Link to={routes.artwork}><img src={logo} alt='Logo Sabrina Sust' className={style.imageLogo}/></Link>
       </div>
       <div className={style.menuContainerNavbar}>
         <MenuComponent />
