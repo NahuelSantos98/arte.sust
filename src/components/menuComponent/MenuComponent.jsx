@@ -31,7 +31,7 @@ const MenuComponent = () => {
             <Link to={routes.faq}>{!isEnglish ? 'Preguntas Frecuentes' : 'Frequently asked questions'}</Link>
           </li>
           <li className={location.pathname === routes.bio ? style.selected : ''}>
-            <Link to={routes.bio}>Biografía</Link>
+            <Link to={routes.bio}>{!isEnglish ? 'Biografía' : 'Biography'}</Link>
           </li>
           <li className={location.pathname === routes.contact ? style.selected : ''}>
             <Link to={routes.contact}>{!isEnglish ? 'Contacto' : 'Contact'}</Link>

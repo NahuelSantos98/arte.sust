@@ -7,13 +7,13 @@ import emailjs from '@emailjs/browser'
 const ContactForm = () => {
     const { state } = useContext(LanguageContext)
     const isEnglish = state.language
-    const { register, handleSubmit, formState: { errors }, watch } = useForm()
+    const { register, handleSubmit, formState: { errors }, watch, reset } = useForm()
     const [sent, setSent] = useState(false)
 
     const commentValue = watch("comment", "")
     const lengthComment = commentValue.length
 
-    const refForm = useRef()
+    const refForm = useRef("")
 
     const submitForm = () => {
         const serviceId = import.meta.env.VITE_SERVICE_ID
@@ -23,12 +23,11 @@ const ContactForm = () => {
         emailjs.sendForm(serviceId, templateId, refForm.current, key)
             .then(res => {
                 setSent(true)
+                reset()
                 console.log(res.text);
             })
             .catch(err => console.error(err))
     }
-
-    
 
 
     return (
