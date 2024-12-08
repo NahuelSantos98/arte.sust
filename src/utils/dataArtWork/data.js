@@ -172,7 +172,7 @@ export const data = [
         // price: 250000,
         // priceUsd: 20,
         size: '20 x 20 cm',
-        dispo: true,
+        dispo: false,
         small: false
     },
     {
