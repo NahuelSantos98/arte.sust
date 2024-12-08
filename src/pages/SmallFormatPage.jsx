@@ -10,7 +10,7 @@ const SmallFormatPage = () => {
   return (
     <div className={style.smallFormatTitle}>
       <h1>{isEnglish ? 'Small-Format Artwork' : 'Obras en formato pequeño' }</h1>
-        <WorksListContainer data={smallFormat} />
+        <WorksListContainer data={smallFormat}/>
     </div>
   )
 }
