@@ -1,10 +1,9 @@
-import { data } from "../../utils/data"
 import {routes} from '../../utils/route'
 import {Link} from 'react-router-dom'
 import WorksCardComponent from "../worksCardComponent/WorksCardComponent"
 import style from './worksList.module.css'
 
-const WorksList = () => {
+const WorksList = ({data}) => {
   return (
     <div className={style.worksListContainer}>
         {data.map(item=>(

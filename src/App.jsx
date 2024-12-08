@@ -11,6 +11,7 @@ import Footer from "./components/footerComponents/Footer";
 import ScrollToTop from "./utils/scrollToTop";
 import { useEffect } from 'react';
 import { redirectToHash } from "./utils/redirectionToHash";
+import SmallFormatPage from "./pages/SmallFormatPage";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path={routes.bio} element={<BioPage />} />
           <Route path={routes.contact} element={<ContactPage />} />
           <Route path={routes.artDetailWithId} element={<ArtDetail/>} />
+          <Route path={routes.smallFormat} element={<SmallFormatPage />} />
           <Route path="*" element={<h1>404-Page Not Found</h1>} />
         </Routes>
         </ScrollToTop>

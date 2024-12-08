@@ -1,9 +1,9 @@
 import WorksList from '../worksList/WorksList'
 
-const WorksListContainer = () => {
+const WorksListContainer = ({data}) => {
   return (
     <>
-        <WorksList />
+        <WorksList data={data} />
     </>
   )
 }

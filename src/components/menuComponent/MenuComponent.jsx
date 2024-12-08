@@ -27,6 +27,9 @@ const MenuComponent = () => {
         <li className={location.pathname === routes.artwork ? style.selected : ''}>
             <Link to={routes.artwork}>{!isEnglish ? 'Obras' : 'Artwork'}</Link>
           </li>
+          <li className={location.pathname === routes.smallFormat ? style.selected : ''}>
+            <Link to={routes.smallFormat}>{!isEnglish ? 'Obras en formato pequeño' : 'Small-Format Artwork'}</Link>
+          </li>
           <li className={location.pathname === routes.faq ? style.selected : ''}>
             <Link to={routes.faq}>{!isEnglish ? 'Preguntas Frecuentes' : 'Frequently asked questions'}</Link>
           </li>

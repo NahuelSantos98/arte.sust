@@ -11,10 +11,11 @@ export const data = [
         englishDescription: "I feel that this artwork represents me, that I poured my essence onto the canvas.\nIn the whirlwind of life, if I take a moment to close my eyes and let myself go, I see my silhouette represented in brushstrokes; I am art, I am creation, the artist of my own life. And in that context, I feel peace, calm, and serenity.\nThe artwork is presented in a black kiri floating frame.\nIt is exhibited in the Percepciones show at Gallery Zero618.",
         technique: "Acrílicos.",
         englishTechnique: 'Acrylics.',
-        price: 0,
-        priceUsd: 0,
+        // price: 0,
+        // priceUsd: 0,
         size: '60 x 80 cm',
-        dispo: true
+        dispo: true,
+        small: false
     }, {
         id: 2,
         name: 'Percepcion 2',
@@ -27,10 +28,11 @@ export const data = [
         englishDescription: "This is the third piece I’ve created in the Percepción series, although each one has its own special magic. In this case, the textures and reflections, in its size, are striking.\nThe importance lies in surrendering to the sensations and the way the artwork moves through us.\nWhere some may see and feel an immersion into the depths, others, like me, may see the drive toward the reflection, the light, the peak.\nThis artwork invites you to awaken your senses, appreciate the reliefs, feel the texture, and observe the interplay of light and shadow.\nIt is presented in a black kiri floating frame.\nThe artwork is being exhibited at Palacio Barolo during October 2024.",
         technique: "Acrílicos y pasta de relieve.",
         englishTechnique: 'Acrylics and relief paste.',
-        price: 0,
-        priceUsd: 0,
+        // price: 0,
+        // priceUsd: 0,
         size: '80 x 120 cm',
-        dispo: true
+        dispo: true,
+        small: false
     }, {
         id: 3,
         name: 'Aurora',
@@ -43,10 +45,11 @@ export const data = [
         englishDescription: "Inspired by the first rays of sunlight that break through the darkness of the night to start a new day, this powerful piece plays with reliefs, reflections, and shine.\nBlack is the absence of light, yet it is also the combination of all colors; it conveys power, formality, mystery, strength... And if we cut through the black with gold, which represents light, we achieve a very powerful and interesting balance.\nThe artwork is presented in a black kiri floating frame.\nit is being exhibited at Palacio Barolo during October 2024.",
         technique: 'Acrílicos, texturas y laminas de oro.',
         englishTechnique: "Acrylics, textures, and gold leaf.",
-        price: 0,
-        priceUsd: 0,
+        // price: 0,
+        // priceUsd: 0,
         size: '80 x 120 cm',
-        dispo: true
+        dispo: true,
+        small: false
     }, {
         id: 4,
         name: 'Luz de luna',
@@ -59,10 +62,11 @@ export const data = [
         englishDescription: "One of the things I love most, besides the sea, is the Moon. I am passionate about observing its changes and the moments when it rises, enormous, behind the buildings.\nThis fascination inspired me to create this artwork that combines the abstract and the figurative in neutral colors that adapt to any space.\nThe artwork has a black kiri floating frame.\nIt participated in the Percepciones show at Gallery Zero618.",
         technique: 'Acrílicos y relieves.',
         englishTechnique: "Acrylics and reliefs.",
-        price: 0,
-        priceUsd: 0,
+        // price: 0,
+        // priceUsd: 0,
         size: '80 x 120 cm',
         dispo: true,
+        small: false
     },
     {
         id: 5,
@@ -76,10 +80,11 @@ export const data = [
         englishDescription: "Inspired by the protective nature of stone, I created this powerful piece that plays with reliefs, reflections, and shine. Black is the absence of light, yet it is also the combination of all colors; it conveys power, formality, mystery, strength... And when we cut through black with gold, which represents light, we achieve a very powerful and interesting balance.\n Piece presented in a black Kiri floating frame.\nTurmalina was exhibited at the Percepciones show at Gallery Zero618.",
         technique: 'Acrílicos.',
         englishTechnique: 'Acrylics.',
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '50 x 60 cm',
         dispo: true,
+        small: false
     },
     {
         id: 6,
@@ -92,10 +97,11 @@ export const data = [
         englishDescription: "Inspired by the strength of the sunset, I created this small piece to bring a bit of that powerful sensation into the home. \nDue to its size, it can be placed on a shelf or desk, or hung from its floating frame.",
         technique: 'Juego de textura y degradé.',
         englishTechnique: 'Texture and gradient.',
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '20 x 20 cm',
-        dispo: false
+        dispo: false,
+        small: false
     },
     {
         id: 7,
@@ -109,10 +115,11 @@ export const data = [
         englishDescription: "I named this piece after Shakespeare’s quote, 'In the deepest water, the calmest stillness resides.' \nI created it during a time of deep introspection, and its cool colors blended into one another represent that, achieving a very special impact. \nPresented in a natural Kiri floating frame.\nProfundidad was exhibited at Cultura Viva and at the Percepciones exhibition at Gallery Zero618.",
         technique: 'Acrílicos.',
         englishTechnique: 'Acrylics.',
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '100 x 120 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 8,
@@ -126,10 +133,11 @@ export const data = [
         englishDescription: "When creating this piece, I was inspired by life, the earth, and the eternal.\n Presented in a natural Kiri floating frame.\nEternidad was exhibited at the Perceptions show at Gallery Zero618.",
         technique: 'Técnica mixta, relieves, acrílicos y pintura asfáltica.',
         englishTechnique: "Mixed techniques, reliefs, acrylics, and asphalt paint.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '60 x 40 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 9,
@@ -143,10 +151,11 @@ export const data = [
         englishDescription: "Who hasn't been to the sea at some point and had the chance to see that perfect curl that forms in the wave before it crashes with all its might?\nIn this piece, I played with texture and my favorite colors to convey that beautiful sensation of a mix of adrenaline and admiration.\n Presented in a black Kiri floating frame.\nLa Ola Magnética was exhibited in the Percepciones show at Gallery Zero618.",
         technique: 'Realizada con pasta de modelar y acrílicos.',
         englishTechnique: "Made with modeling paste and acrylics.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '40 x 60 cm',
         dispo: true,
+        small: false
     },
     {
         id: 10,
@@ -160,10 +169,11 @@ export const data = [
         englishDescription: "Another one of the small-format pieces I enjoy creating to highlight spaces. \nThe piece RITMO is an expression of neutral colors and shines that blend and harmonize with one another. It adds originality and distinction to any space. \n Set in a natural Kiri floating frame.\nRitmos was exhibited at Palacio Barolo.",
         technique: 'Acrílicos.',
         englishTechnique: "Acrylics.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '20 x 20 cm',
         dispo: true,
+        small: false
     },
     {
         id: 11,
@@ -177,10 +187,11 @@ export const data = [
         englishDescription: "I created this piece during a time of change in my life, when new possibilities were opening up, new paths were emerging, and I was making important choices. \n What may seem like mere lines at first glance actually represent crossed paths, connections, unions, and options. Made with the colors I enjoy working with the most, the result is a beautiful, ordered chaos.\n It is set in a natural Kiri floating frame.\nEl Cambio was exhibited in the Percepciones show at Gallery Zero618.",
         technique: 'Acrílico.',
         englishTechnique: "Acrylics.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '80 x 120 cm',
         dispo: true,
+        small: false
     },
     {
         id: 12,
@@ -194,10 +205,11 @@ export const data = [
         englishDescription: "Triptych in neutral colors. The simplicity of the lines and their colors add a touch of style to any environment. \nThey can be displayed individually or as a set. \nThey are presented in a natural Kiri floating frame.\nTrazos was exhibited at Palacio Barolo.",
         technique: 'Acrílico.',
         englishTechnique: "Acrylics.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '30 x 40 cm',
         dispo: true,
+        small: false
     },
     {
         id: 13,
@@ -211,10 +223,11 @@ export const data = [
         englishDescription: "A small piece to place on a console table or hang in a compact space that you want to highlight.\nThe gold represents a high vibration that fills the person who observes it with energy. It is a symbol of power and strength.\n Framed in natural Kiri.\nArena Dorada was exhibited at Palacio Barolo.",
         technique: 'Relieves, acrílico dorado y pintura asfáltica.',
         englishTechnique: "Reliefs, golden acrylic, and asphalt paint.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '20 x 20 cm',
         dispo: true,
+        small: false
     },
     {
         id: 14,
@@ -228,10 +241,11 @@ export const data = [
         englishDescription: "Inspired by my piece Depth, I created this work with reliefs and the disruptive touch of orange that adds a contemporary flair. It combines matte tones with the shiny detail of champagne color.\nIt is presented in a natural Kiri floating frame.",
         technique: 'Acrílicos y espátulas.',
         englishTechnique: "Acrylics and spatulas.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '50 x 60 cm',
         dispo: false,
+        small: false
     },
     {
         id: 15,
@@ -245,10 +259,11 @@ export const data = [
         englishDescription: "Playing with tones, shapes, and depths resulted in a perfect formula to add a touch of personality to any environment.\nI am convinced that details make a difference, providing a combination of elegance and modernity.\nIt is presented in a black Kiri floating frame.\nCaminos was exhibited in the Percepciones show at Gallery Zero618.",
         technique: 'Acrílicos y distintas espátulas.',
         englishTechnique: "Acrylics and various spatulas.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '60 x 80 cm',
         dispo: true,
+        small: false
     },
     {
         id: 16,
@@ -262,10 +277,11 @@ export const data = [
         englishDescription: "This piece, as its title suggests (Freedom), represents a moment of great liberation, resulting in something very powerful and imposing.\nThe artwork is presented with a black kiri floating frame.",
         technique: 'Combina varias técnicas usando acrílicos sobre fondo en degradé.',
         englishTechnique: "It combines various techniques using acrylics on a gradient background.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '120 x 80 cm',
         dispo: true,
+        small: false
     },
     {
         id: 17,
@@ -279,10 +295,11 @@ export const data = [
         englishDescription: "Gold is a high vibration that energizes the person who observes it. It is a symbol of power and strength.\nIdeal for bright places to enjoy its shine and sparkle, as well as for placement at the entrance of a home to convey a sense of powerful energy.\nPresented in a natural Kiri floating frame, complementing the style of the piece. ",
         technique: 'Dorado con relieves y pintura asfáltica.',
         englishTechnique: "Gold with reliefs and asphalt paint.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '30 x 40 cm',
         dispo: false,
+        small: false
     },
     {
         id: 18,
@@ -296,10 +313,11 @@ export const data = [
         englishDescription: "The relief of this artwork evokes energy, inviting one to follow a direction and surrender to dynamism. In the process, the brilliance allows us to feel the intensity of light, provoking a sense of power and inner strength.\nThe artwork is presented with a black kiri floating frame.\nDestello was exhibited at Cultura Viva.",
         technique: 'Acrílico, pasta de relieve y láminas de oro.',
         englishTechnique: "Acrylic, relief paste, and gold leaf.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '50 x 50 cm',
         dispo: false,
+        small: false
     },
     {
         id: 19,
@@ -313,10 +331,11 @@ export const data = [
         englishDescription: "One of my greatest passions is the moon, and it inspired me to create this piece, which in fine lines represents the color of the starry sky intertwined with its silvery hue.\nThe combination of darkness with shine adds a delicate touch to decorate any space.\nPresented in a natural Kiri floating frame.\nLa Noche Estrellada was exhibited at Gallery Zero618.",
         technique: 'Acrílico.',
         englishTechnique: "Acrylics.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '50 x 50 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 20,
@@ -330,10 +349,11 @@ export const data = [
         englishDescription: "The importance of surrendering to sensations and the way the artwork moves through us.\nWhere some may see and feel the immersion into the depths, others like me can see the rise toward the reflection, the light, the peak.\nThis piece invites you to awaken your senses, appreciate the reliefs, feel the texture, and observe the light and shadow.\nIt is presented in a black Kiri floating frame.",
         technique: 'Acrilicos y Pasta de modelar.',
         englishTechnique: "Acrylics and modeling paste.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '50 x 60 cm',
-        dispo: false
+        dispo: false,
+        small: false
     },
     {
         id: 21,
@@ -347,10 +367,11 @@ export const data = [
         englishDescription: "I want to share with you this piece that I enjoyed creating so much.\nI named it 𝙀𝙡 𝙍𝙚𝙨𝙥𝙡𝙖𝙣𝙙𝙤𝙧 because it radiates a lot of light; not only from the shine of its copper sheets but also from everything I put into it while making it.\nIt has everything to add personality to your space: relief, shine, touches of color, and above all, character.\nIt is presented with a black kiri floating frame.\nEl Resplandor was exhibited at Cultura Viva and participates in the Percepciones show at Gallery Zero618.",
         technique: 'Acrilico, laminas de cobre, pintura asfaltica.',
         englishTechnique: "Acrylic, copper sheets, asphalt paint.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '60 x 80 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 22,
@@ -364,10 +385,11 @@ export const data = [
         englishDescription: "I invite you to use all your senses to enjoy this piece and let yourself be carried away...\nThanks to the colors, the shine, and the magic of the texture, it's impossible not to stop for a long time discovering every corner of this painting.\nIt's ideal for adding a distinguished and original touch to a space in your home, creating a focal point that is complemented by a natural Kiri floating frame.\nTierra participated in the Percepciones show at Gallery Zero618.",
         technique: 'Acrilicos y Pasta de modelar.',
         englishTechnique: "Acrylics and modeling paste.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '80 x 60 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 23,
@@ -381,10 +403,11 @@ export const data = [
         englishDescription: "The sea, like people, may appear calm on the surface. But deep within, where no one sees, the waters can be tumultuous. What matters is not to lose sight of the reflection of light to find the way and achieve a sense of serenity.\nPresented in a black Kiri floating frame.\nAlma Revuelta participated in the Percepciones show at Gallery Zero618.",
         technique: 'Técnica mixta utilizando acrílicos con pincel y espátula y láminas de plata.',
         englishTechnique: "Mixed technique using acrylics with brush and spatula, and silver sheets.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '50 x 50 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 24,
@@ -398,10 +421,11 @@ export const data = [
         englishDescription: "Has there ever been a moment when you sat in a corner of your home, looked at a piece of art, and felt peace?\nWell, that’s what this piece has conveyed to me since the very first creative moment... The different turquoise and emerald green tones and their movement instantly transport me to a feeling of clear serenity.\nIts color is associated with growth, progress, nature, and healing, also evoking tranquility and peace.\nFramed in black floating wood.\nEsmeralda was exhibited at Cultura Viva, Gallery Zero618, and Palacio Barolo.",
         technique: 'Acrilicos.',
         englishTechnique: "Acrylics.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '80 x 120 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 25,
@@ -415,10 +439,11 @@ export const data = [
         englishDescription: "My passion for the sea and its colors inspired me to create this piece. I chose its name because I imagined being underwater, with the peace that comes from the silence beneath the surface. Its reliefs, the color changes according to depth, and the blocks of sand returned to me the image of a mirror of the soul, with its spectrum of emotions and sensations between light and darkness, peace and chaos.\nWithout a doubt, I would always choose to be surrounded by the sea and its colors. It is my place in the world.\nPiece framed in a black Kiri floating frame.\nEspejo Marino participated in the Percepciones show at Gallery Zero618.",
         technique: 'Acrílicos trabajados con espátulas para lograr texturas.',
         englishTechnique: "Acrylics worked with spatulas to achieve textures.",
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '50 x 60 cm',
-        dispo: true
+        dispo: true,
+        small: false
     },
     {
         id: 26,
@@ -432,10 +457,11 @@ export const data = [
         englishDescription: 'Just like the moon, the artwork does not have its own light, but when it receives any reflection, it shines in all its splendor. A play of reliefs, textures, and materials that creates an incomparable result.\nIt is an ideal piece to place near a window or an area where it receives light, as the use of silver acrylic and aluminum leaf creates an incredible effect.\nIt is presented in a black kiri floating frame.\nReflejos was exhibited at Palacio Barolo.',
         technique: 'Acrílicos, relieve y láminas de aluminio.',
         englishTechnique: 'Acrylics, relief, and aluminum sheets.',
-        price: 250000,
-        priceUsd: 20,
+        // price: 250000,
+        // priceUsd: 20,
         size: '40 x 30 cm',
-        dispo: true
+        dispo: true,
+        small: false
     }
 ]
 

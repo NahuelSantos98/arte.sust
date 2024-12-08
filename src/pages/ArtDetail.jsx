@@ -1,42 +1,49 @@
 import { Link, useParams } from 'react-router-dom';
-import { data } from '../utils/data';
+import { useArtwork } from '../hooks/useArtwork';
 import style from './pagesStyle/artDetail.module.css';
 import { useContext, useState } from 'react';
 import { LanguageContext } from '../context/languageContext';
-import isotipo from '../utils/img/Isotipo-Final.jpg';
-import { IoMdArrowRoundBack } from "react-icons/io";
-import { IoMdArrowRoundForward } from "react-icons/io";
+import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
 import { CgClose } from "react-icons/cg";
-import {routes} from '../utils/route'
 import { TiArrowBack } from "react-icons/ti";
+import { useNavigate } from 'react-router-dom';
 
 const ArtDetail = () => {
     const { state } = useContext(LanguageContext);
+    const artworkData = useArtwork();
     const isEnglish = state.language;
     const { id } = useParams();
-    
-    const searchedArt = data.find(obra => obra.id === parseInt(id));
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const navigate = useNavigate();
+
+    const searchedArt = artworkData.find(obra => obra.id == parseInt(id));
+
+    if (!searchedArt) {
+        return <h2>Obra no encontrada</h2>;
+    }
+
     const {
         name,
         principalImage,
         secondImage,
         thirdImage,
         fourthImage,
+        fifthImage,
         description,
         technique,
-        price,
         englishDescription,
         englishTechnique,
-        fifthImage,
         size,
+        price, 
         priceUsd,
-        dispo
+        dispo,
+        small
     } = searchedArt;
 
-    const images = [principalImage, secondImage, thirdImage, fourthImage, fifthImage].filter(Boolean);
-
-    const [selectedImage, setSelectedImage] = useState(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const images = !small
+        ? [principalImage, secondImage, thirdImage, fourthImage].filter(Boolean)
+        : [];
 
     const openModal = (image) => {
         const index = images.indexOf(image);
@@ -49,14 +56,14 @@ const ArtDetail = () => {
     };
 
     const showNextImage = (e) => {
-        e.stopPropagation(); 
+        e.stopPropagation();
         const nextIndex = (currentIndex + 1) % images.length;
         setCurrentIndex(nextIndex);
         setSelectedImage(images[nextIndex]);
     };
 
     const showPreviousImage = (e) => {
-        e.stopPropagation(); 
+        e.stopPropagation();
         const prevIndex = (currentIndex - 1 + images.length) % images.length;
         setCurrentIndex(prevIndex);
         setSelectedImage(images[prevIndex]);
@@ -64,61 +71,65 @@ const ArtDetail = () => {
 
     return (
         <section className={style.artDetailContainer}>
+
             <img
-                src={fifthImage}
+                src={small ? principalImage : fifthImage}
                 className={style.pricipalImage}
-                onClick={() => openModal(fifthImage)}
+                onClick={() => small || !fifthImage ? null : openModal(fifthImage)}
                 alt={name}
             />
-            <Link to={routes.artwork} className={style.goBackDetail}><span className={style.arrowIcon}><TiArrowBack /></span>Volver</Link>
+            
+            <div
+                className={style.goBackDetail}
+                onClick={() => navigate(-1)}
+            >
+                <span className={style.arrowIcon}><TiArrowBack /></span>Volver
+            </div>
+
             <h2 className={style.detailTtile}>{name}</h2>
-            {!dispo && <div className={style.soldContainer}><span className={style.circleSold}></span><p className={style.dispo}>{isEnglish? "Sold/Reserved" : "Vendido/Reservado"}</p></div>}
+
+            {!dispo && (
+                <div className={style.soldContainer}>
+                    <span className={style.circleSold}></span>
+                    <p className={style.dispo}>{isEnglish ? "Sold/Reserved" : "Vendido/Reservado"}</p>
+                </div>
+            )}
+            {priceUsd && <p>{isEnglish? `` : `Precio: $${price}`}</p>}
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
             <p>{size}</p>
-            {/* <p>${price} - {priceUsd} USD</p> */}
-            <div className={style.secondaryImageContainer}>
-                <img
-                    src={secondImage}
-                    className={style.imageArt}
-                    onClick={() => openModal(secondImage)}
-                    alt="Second artwork"
-                />
-                
-                <img
-                    src={thirdImage}
-                    className={style.imageArt}
-                    onClick={() => openModal(thirdImage)}
-                    alt="Third artwork"
-                />
-                
-                {fourthImage && (
-                    <img
-                        src={fourthImage}
-                        className={style.imageArt}
-                        onClick={() => openModal(fourthImage)}
-                        alt="Fourth artwork"
-                    />
-                )}
 
-                <img
-                    src={principalImage}
-                    className={style.imageArt}
-                    onClick={() => openModal(principalImage)}
-                    alt="Principal artwork"
-                />
-            </div>
+            {!small && (
+                <div className={style.secondaryImageContainer}>
+                    {images.map((image, index) => (
+                        <img
+                            key={index}
+                            src={image}
+                            className={style.imageArt}
+                            onClick={() => openModal(image)}
+                            alt={`Artwork ${index + 1}`}
+                        />
+                    ))}
+                </div>
+            )}
+            
             <article className={style.descriptionDetailContainer}>
-                <p>{isEnglish ? englishDescription : description}</p>
+                {description && <p>{isEnglish ? englishDescription : description}</p>}
             </article>
 
-                <Link to={routes.artwork} className={style.linkArtworkDetail}><h3><span className={style.arrowIcon}><TiArrowBack /></span>Volver</h3></Link>
+            <div
+                className={style.linkArtworkDetail}
+                onClick={() => navigate(-1)}
+            >
+                <h3>
+                    <span className={style.arrowIcon}><TiArrowBack /></span>Volver
+                </h3>
+            </div>
 
             {selectedImage && (
                 <article className={style.modalOverlay} onClick={closeModal}>
                     <button onClick={showPreviousImage} className={style.prevButton}><IoMdArrowRoundBack /></button>
                     <img src={selectedImage} className={style.modalImage} alt="Selected Image" />
-                    <button onClick={showNextImage} className={style.nextButton}><IoMdArrowRoundForward />
-                    </button>
+                    <button onClick={showNextImage} className={style.nextButton}><IoMdArrowRoundForward /></button>
                     <span className={style.crossCloseModal} onClick={closeModal}><CgClose /></span>
                 </article>
             )}
