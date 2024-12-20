@@ -20,7 +20,7 @@ export const smallFormat = [
         price: 35000,
         priceUsd: 20,
         size: '20 x 20 cm',
-        dispo: true,
+        dispo: false,
         small: true
     },
     {

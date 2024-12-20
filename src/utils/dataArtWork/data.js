@@ -1,6 +1,25 @@
 export const data = [
     {
         id: 1,
+        name: 'Triptico Marino',
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/TripticoMarino/MockUpTriptico.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/TripticoMarino/TripticoA.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/TripticoMarino/TripticoB.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/TripticoMarino/TripticoC.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/TripticoMarino/TripticoCompleto.jpg',
+        description: 'Movimiento, dinamismo, libertad, bravura... Imaginate entrar a tu casa y todos los días poder encontrarte con esas sensaciones. Es ideal para darle distinción y personalidad a un recibidor, o colocarlo sobre una cómoda en el living donde poder verlo mientras tomas una bebida o un rico café y te relajas al final del día. Lo mágico del arte es poder transportarte por un instante a otro lugar y disfrutar.',
+        englishDescription: "Movement, dynamism, freedom, bravery... Imagine coming home and being greeted by these sensations every day. It's perfect for adding distinction and personality to an entryway or placing it on a console table in the living room, where you can admire it while enjoying a drink or a delicious coffee as you unwind at the end of the day. The magic of art lies in its ability to transport you, even for a moment, to another place and let you enjoy the experience.",
+        technique: "Acrílicos y relieves.",
+        englishTechnique: 'Acrylics and relief.',
+        // price: 0,
+        // priceUsd: 0,
+        size: 'Individual: 18 x 24 cm',
+        triptico: "54 x 24",
+        dispo: true,
+        small: false
+    },
+    {
+        id: 2,
         name: 'Esencia',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia2.jpg',
@@ -17,7 +36,7 @@ export const data = [
         dispo: true,
         small: false
     }, {
-        id: 2,
+        id: 3,
         name: 'Percepcion 2',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-2.jpg',
@@ -34,7 +53,7 @@ export const data = [
         dispo: true,
         small: false
     }, {
-        id: 3,
+        id: 4,
         name: 'Aurora',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora2.jpg',
@@ -51,7 +70,7 @@ export const data = [
         dispo: true,
         small: false
     }, {
-        id: 4,
+        id: 5,
         name: 'Luz de luna',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna2.jpg',
@@ -69,7 +88,7 @@ export const data = [
         small: false
     },
     {
-        id: 5,
+        id: 6,
         name: 'Turmalina',
         principalImage: "https://www.artesust.com.ar/ImageSabrinaRecortadas/Turmalina/Turmalina1.jpg",
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Turmalina/Turmalina2.jpeg',
@@ -87,7 +106,7 @@ export const data = [
         small: false
     },
     {
-        id: 6,
+        id: 7,
         name: 'Atardecer',
         principalImage: "https://www.artesust.com.ar/ImageSabrinaRecortadas/Atardecer/Atardecer1.jpg",
         secondImage: "https://www.artesust.com.ar/ImageSabrinaRecortadas/Atardecer/Atardecer2.jpeg",
@@ -104,7 +123,7 @@ export const data = [
         small: false
     },
     {
-        id: 7,
+        id: 8,
         name: 'Profundidad',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Profundidad/Profundidad1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Profundidad/Profundidad2.jpeg',
@@ -122,7 +141,7 @@ export const data = [
         small: false
     },
     {
-        id: 8,
+        id: 9,
         name: 'Eternidad',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Eternidad/Eternidad1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Eternidad/Eternidad2.jpeg',
@@ -140,7 +159,7 @@ export const data = [
         small: false
     },
     {
-        id: 9,
+        id: 10,
         name: 'La Ola Magnetica',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/OlaMagnetica/OlaMagnetica1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/OlaMagnetica/OlaMagnetica2.jpeg',
@@ -158,7 +177,7 @@ export const data = [
         small: false
     },
     {
-        id: 10,
+        id: 11,
         name: 'Ritmo',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Ritmo/Ritmo1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Ritmo/Ritmo2.jpeg',
@@ -176,7 +195,7 @@ export const data = [
         small: false
     },
     {
-        id: 11,
+        id: 12,
         name: 'El Cambio',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElCambio/ElCambio1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElCambio/ElCambio2.jpeg',
@@ -194,7 +213,7 @@ export const data = [
         small: false
     },
     {
-        id: 12,
+        id: 13,
         name: 'Trazos',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Trazos/Trazos1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Trazos/Trazos2.jpeg',
@@ -212,7 +231,7 @@ export const data = [
         small: false
     },
     {
-        id: 13,
+        id: 14,
         name: 'Arena Dorada',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ArenaDorada/ArenaDorada1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ArenaDorada/ArenaDorada2.jpeg',
@@ -230,7 +249,7 @@ export const data = [
         small: false
     },
     {
-        id: 14,
+        id: 15,
         name: 'Profundidad Contemporánea',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ProfundidadContemporanea/ProfContemporanea1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ProfundidadContemporanea/ProfContemporanea2.jpeg',
@@ -248,7 +267,7 @@ export const data = [
         small: false
     },
     {
-        id: 15,
+        id: 16,
         name: 'Caminos',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Caminos/Caminos1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Caminos/Caminos2.jpeg',
@@ -266,7 +285,7 @@ export const data = [
         small: false
     },
     {
-        id: 16,
+        id: 17,
         name: 'Libertad',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Libertad/Libertad1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Libertad/Libertad2.jpeg',
@@ -284,7 +303,7 @@ export const data = [
         small: false
     },
     {
-        id: 17,
+        id: 18,
         name: 'Golden',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Golden/Golden1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Golden/Golden2.jpeg',
@@ -302,7 +321,7 @@ export const data = [
         small: false
     },
     {
-        id: 18,
+        id: 19,
         name: 'Destello',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Destello/Destello1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Destello/Destello2.jpeg',
@@ -320,7 +339,7 @@ export const data = [
         small: false
     },
     {
-        id: 19,
+        id: 20,
         name: 'La Noche Estrellada',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LaNocheEstrellada/NocheEstrellada1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LaNocheEstrellada/NocheEstrellada2.jpeg',
@@ -338,7 +357,7 @@ export const data = [
         small: false
     },
     {
-        id: 20,
+        id: 21,
         name: 'Percepción',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion/Percepcion1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion/Percepcion2.jpeg',
@@ -356,7 +375,7 @@ export const data = [
         small: false
     },
     {
-        id: 21,
+        id: 22,
         name: 'El Resplandor',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElResplandor/ElResplandor1.jpeg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElResplandor/ElResplandor2.jpeg',
@@ -374,7 +393,7 @@ export const data = [
         small: false
     },
     {
-        id: 22,
+        id: 23,
         name: 'Tierra',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Tierra/Tierra1.jpeg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Tierra/Tierra2.jpeg',
@@ -392,7 +411,7 @@ export const data = [
         small: false
     },
     {
-        id: 23,
+        id: 24,
         name: 'Alma Revuelta',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/AlmaRevuelta/AlmaRevuelta1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/AlmaRevuelta/AlmaRevuelta2.jpg',
@@ -410,7 +429,7 @@ export const data = [
         small: false
     },
     {
-        id: 24,
+        id: 25,
         name: 'Esmeralda',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esmeralda/Esmeralda1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esmeralda/Esmeralda2.jpeg',
@@ -428,7 +447,7 @@ export const data = [
         small: false
     },
     {
-        id: 25,
+        id: 26,
         name: 'Espejo Marino',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/EspejoMarino/EspejoMarino1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/EspejoMarino/EspejoMarino2.jpeg',
@@ -446,7 +465,7 @@ export const data = [
         small: false
     },
     {
-        id: 26,
+        id: 27,
         name: 'Reflejos',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Reflejos/Reflejos1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Reflejos/Reflejos2.jpeg',

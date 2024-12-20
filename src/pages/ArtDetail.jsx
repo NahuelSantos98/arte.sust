@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useArtwork } from '../hooks/useArtwork';
 import style from './pagesStyle/artDetail.module.css';
 import { useContext, useState } from 'react';
@@ -38,11 +38,12 @@ const ArtDetail = () => {
         price, 
         priceUsd,
         dispo,
-        small
+        small,
+        triptico
     } = searchedArt;
 
     const images = !small
-        ? [principalImage, secondImage, thirdImage, fourthImage].filter(Boolean)
+        ? [principalImage, secondImage, thirdImage, fourthImage, fifthImage].filter(Boolean)
         : [];
 
     const openModal = (image) => {
@@ -97,6 +98,7 @@ const ArtDetail = () => {
             {priceUsd && <p>{isEnglish? `` : `Precio: $${price}`}</p>}
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
             <p>{size}</p>
+            {triptico && <p>{isEnglish? "Complete triptic" : "Triptico completo"}: {triptico}</p>}
 
             {!small && (
                 <div className={style.secondaryImageContainer}>
