@@ -56,12 +56,12 @@ export const smallFormat = [
         price: 35000,
         priceUsd: 20,
         size: '18 x 24 cm',
-        dispo: true,
+        dispo: false,
         small: true
     },
     {
         id: 105,
-        name: 'Caida de Aguamarina',
+        name: 'Caída de Aguamarina',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/CaidaAguaMarina/CaidaAguaMarina.jpg',
         technique: 'Acrílicos.',
         englishTechnique: 'Acrylics.',        

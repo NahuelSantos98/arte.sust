@@ -92,7 +92,7 @@ const ArtDetail = () => {
             {!dispo && (
                 <div className={style.soldContainer}>
                     <span className={style.circleSold}></span>
-                    <p className={style.dispo}>{isEnglish ? "Sold/Reserved" : "Vendido/Reservado"}</p>
+                    <p className={style.dispo}>{isEnglish ? "Sold" : "Vendido"}</p>
                 </div>
             )}
             {priceUsd && <p>{isEnglish? `` : `Precio: $${price}`}</p>}

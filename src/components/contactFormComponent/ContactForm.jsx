@@ -18,12 +18,19 @@ const ContactForm = () => {
     const submitForm = () => {
         const serviceId = import.meta.env.VITE_SERVICE_ID
         const templateId = import.meta.env.VITE_TEMPLATE_ID
+        const templateIdInfo = import.meta.env.VITE_TEMPLATE_ID_INFO
         const key = import.meta.env.VITE_EMAIL_API_KEY
 
         emailjs.sendForm(serviceId, templateId, refForm.current, key)
             .then(res => {
                 setSent(true)
                 reset()
+                console.log(res.text);
+            })
+            .catch(err => console.error(err))
+
+            emailjs.sendForm(serviceId, templateIdInfo, refForm.current, key)
+            .then(res => {
                 console.log(res.text);
             })
             .catch(err => console.error(err))
