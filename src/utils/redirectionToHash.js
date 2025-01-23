@@ -1,5 +1,8 @@
 export const redirectToHash = () => {
-    if (!window.location.hash) {
-        window.location.replace(`${window.location.origin}/#${window.location.pathname}`);
+    const excludedPaths = ['/torrecillas'];
+    const currentPath = window.location.pathname;
+
+    if (!excludedPaths.some(path => currentPath.startsWith(path)) && !window.location.hash) {
+        window.location.replace(`${window.location.origin}/#${currentPath}`);
     }
 };

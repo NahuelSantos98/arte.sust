@@ -102,7 +102,7 @@ const ArtDetail = () => {
 
             {!small && (
                 <div className={style.secondaryImageContainer}>
-                    {images.map((image, index) => (
+                    {images.slice(0, 4).map((image, index) => (
                         <img
                             key={index}
                             src={image}
