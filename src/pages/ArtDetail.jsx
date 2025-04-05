@@ -42,6 +42,9 @@ const ArtDetail = () => {
         triptico
     } = searchedArt;
 
+    const priceWithDot = price.toLocaleString('de-DE')
+    
+
     const images = !small
         ? [principalImage, secondImage, thirdImage, fourthImage, fifthImage].filter(Boolean)
         : [];
@@ -95,7 +98,7 @@ const ArtDetail = () => {
                     <p className={style.dispo}>{isEnglish ? "Sold" : "Vendido"}</p>
                 </div>
             )}
-            {priceUsd && <p>{isEnglish? `` : `Precio: $${price}`}</p>}
+            {priceWithDot && <p>{isEnglish? `Price: $${priceWithDot} (ARG)` : `Precio: $${priceWithDot}`}</p>}
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
             <p>{size}</p>
             {triptico && <p>{isEnglish? "Complete triptic" : "Triptico completo"}: {triptico}</p>}
