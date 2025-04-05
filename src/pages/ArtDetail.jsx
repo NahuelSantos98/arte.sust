@@ -42,7 +42,7 @@ const ArtDetail = () => {
         triptico
     } = searchedArt;
 
-    const priceWithDot = price.toLocaleString('de-DE')
+    const priceWithDot = price?.toLocaleString('de-DE')
     
 
     const images = !small
