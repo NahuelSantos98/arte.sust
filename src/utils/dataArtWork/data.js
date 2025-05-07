@@ -246,7 +246,7 @@ export const data = [
         price: 300000,
         // priceUsd: 20,
         size: '80 x 120 cm',
-        dispo: true,
+        dispo: false,
         small: false
     },
     {
@@ -318,7 +318,7 @@ export const data = [
         price: 200000,
         // priceUsd: 20,
         size: '60 x 80 cm',
-        dispo: true,
+        dispo: false,
         small: false
     },
     {
@@ -444,7 +444,7 @@ export const data = [
         price: 200000,
         // priceUsd: 20,
         size: '80 x 60 cm',
-        dispo: true,
+        dispo: false,
         small: false
     },
     {
