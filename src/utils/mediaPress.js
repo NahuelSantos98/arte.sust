@@ -1,6 +1,6 @@
-import carasPreviewViaje from './img/carasPreviewViaje.png';
-import carasPreviewLibertad from './img/carasPreviewLibertad.png';
-import carasPreviewExpo from './img/carasPreviewExpo.png';
+import carasPreviewViaje from './img/carasPreviewViaje.webp';
+import carasPreviewLibertad from './img/carasPreviewLibertad.webp';
+import carasPreviewExpo from './img/carasPreviewExpo.webp';
 
 export const mediaPress = [
   {

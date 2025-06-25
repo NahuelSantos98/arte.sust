@@ -1,6 +1,6 @@
 import ContactForm from "../components/contactFormComponent/ContactForm"
 import style from './pagesStyle/contactPage.module.css'
-import FotoContacto from '../utils/img/FotoContacto.jpeg'
+import FotoContacto from '../utils/img/FotoContacto.webp'
 import { useContext } from "react"
 import { LanguageContext } from "../context/languageContext"
 
