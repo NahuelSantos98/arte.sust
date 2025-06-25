@@ -1,6 +1,97 @@
 export const data = [
     {
-        id:1,
+        id: 'crepusculo',
+        name: 'Crepúsculo',
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo1.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo2.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo3.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo4.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo5.jpg',
+        description: 'A vos también te pasa que cuando ves el cielo en esa hora en que el sol se está escondiendo de repente sentís como algo hipnótico que te gustaría que ese instante fuera eterno?.\nA mí me sucede estando en la playa, en el horizonte de la autopista cuando voy manejando, en la ventana de casa cuando está cerrando el día... \nBueno, ésta obra nació queriendo plasmar los tonos del atardecer. Y como pasa siempre que la obra cobra vida y uno acompaña el proceso, resultó transmitir mucha pasión y energía. \nLa fusión de los tonos es muy poderosa y los detalles en dorado aportan un toque de sofisticación.',
+        englishDescription: "Does it also happen to you that when you look at the sky at that hour when the sun is setting, you suddenly feel something hypnotic, wishing that moment could last forever?\nIt happens to me at the beach, on the highway horizon while driving, or at my home window when the day is coming to a close...\nWell, this artwork was born from a desire to capture the tones of the sunset. And, as always happens when the artwork comes to life and you go along with the process, it ended up conveying so much passion and energy.\nThe blend of tones is incredibly powerful, and the golden details add a touch of sophistication.",
+        technique: "Acrílicos y pasta de relieve.",
+        englishTechnique: 'Acrylics and relief paste.',
+        price: 200000,
+        // priceUsd: 0,
+        size: '60 x 80 cm',
+        dispo: true,
+        small: false
+    },
+    {
+        id: 'bosque-dorado',
+        name: "Bosque dorado",
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        description: 'Todas las veces que voy a Villa Gesell paso aunque sea un rato en el Pinar del Norte con mi cámara porque el bosque siempre me regala fotos increíbles.\nÉste año, paseando con mis hijos, nos perdimos entre plantaciones que dejaban pasar el reflejo del sol como haces de luz.\nObviamente, eso se transformó en inspiración inmediata para hacer una obra abstracta en color verde y detalles dorados que, con el reflejo del sol o la luz, transmite la misma sensación que tuve dentro del bosque.\nEl resultado es una obra muy delicada y dinámica para traer vida a cualquier espacio.',
+        englishDescription: "Every time I go to Villa Gesell, I always spend at least a little while in the Pinar del Norte with my camera, because the forest always offers me incredible photos.\nThis year, while walking with my children, we got lost among plantations where sunlight filtered through like beams of light.\nNaturally, that became immediate inspiration to create an abstract artwork in green with golden details that, with sunlight or any light reflection, conveys the same feeling I had inside the forest.\nThe result is a very delicate and dynamic piece that brings life to any space.",
+        technique: "Pasta de relieve, acrílicos y laminas de oro.",
+        englishTechnique: 'Relief paste, acrylics and gold leafs.',
+        price: 200000,
+        // priceUsd: 0,
+        size: '60 x 80 cm',
+        dispo: true,
+        small: false
+    },
+    {
+        id: "alma",
+        name:"Alma",
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        description: 'Esta obra es un nuevo retrato abstracto que forma parte de la serie de mujeres que transmiten fortaleza, que emergen de la profundidad de los sentidos y que iluminan con su luz propia.\nALMA es una obra en formato mediano muy delicada y a la vez poderosa y que con el juego de la luz produce unos reflejos que aportan significado al propósito de la obra.',
+        englishDescription: "This piece is a new abstract portrait that is part of the series of women who convey strength, who emerge from the depths of the senses, and who shine with their own light.\nALMA is a medium-sized artwork that is both delicate and powerful, and through the play of light, it creates reflections that add meaning to the purpose of the piece.",
+        technique: "Pasta de relieve, acrílicos y laminas de plata.",
+        englishTechnique: 'Relief paste, acrylics and silver leafs.',
+        price: 100000,
+        // priceUsd: 0,
+        size: '30 x 50 cm',
+        dispo: true,
+        small: false
+    },
+    {
+        id: "marea",
+        name:"Marea",
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        description: 'Jugar con materiales y texturas para crear obras marinas me apasiona. Para traer siempre nuevas propuestas marinas esta vez hice un díptico que al verlo automáticamente transporta al mar.\nSon ideales para poner en algún recibidor o un rincón especial de tu casa. Sobre todo, que jugando con el espacio libre entre las obras, podés cubrir más o menos espacio.',
+        englishDescription: "Playing with materials and textures to create ocean-inspired artworks is something I'm passionate about. To keep bringing fresh marine-inspired pieces, this time I created a diptych that instantly transports you to the sea.\nThey’re ideal for placing in an entryway or a special corner of your home. Especially because, by adjusting the space between the pieces, you can cover more or less area.",
+        technique: "Pasta de relieve, piedras naturales de cuarzo y acrílicos.",
+        englishTechnique: 'Relief paste, natural quartz stones and acrylics.',
+        price: 200000,
+        // priceUsd: 0,
+        size: 'Individual: 30 x 50 cm',
+        triptico: "65 x 50",
+        dispo: true,
+        small: false
+    },
+    {
+        id: "costa",
+        name:"Costa",
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas//.jpg',
+        description: 'Mi pasión por el mar y sus colores me motivó a realizar esta obra en formato horizontal que se adapta a cualquier ambiente, ya sea sobre algún sillón o una cama.\nEl fluir de los materiales y los relieves convierten a ésta obra en una pieza única.',
+        englishDescription: "My passion for the sea and its colors inspired me to create this horizontal piece that fits perfectly in any space, whether above a sofa or a bed.\nThe flow of the materials and the textures make this artwork a truly unique piece.",
+        technique: "Acrílicos, pintura asfáltica y piedras naturales de cuarzo.",
+        englishTechnique: 'Acrylics, asphalt paint, and natural quartz stones.',
+        price: 300000,
+        // priceUsd: 0,
+        size: '120 x 80cm',
+        dispo: true,
+        small: false
+    },
+    {
+        id: 'misterio',
         name: 'Misterio',
         principalImage:"https://www.artesust.com.ar/ImageSabrinaRecortadas/Misterio/Misterio1.jpg",
         secondImage: "https://www.artesust.com.ar/ImageSabrinaRecortadas/Misterio/Misterio2.jpg",
@@ -18,26 +109,7 @@ export const data = [
         small: false
     },
     {
-        id: 2,
-        name: 'Crepúsculo',
-        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo1.jpg',
-        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo2.jpg',
-        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo3.jpg',
-        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo4.jpg',
-        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Crepusculo/Crepusculo5.jpg',
-        description: 'A vos también te pasa que cuando ves el cielo en esa hora en que el sol se está escondiendo de repente sentís como algo hipnótico que te gustaría que ese instante fuera eterno?.\nA mí me sucede estando en la playa, en el horizonte de la autopista cuando voy manejando, en la ventana de casa cuando está cerrando el día... \nBueno, ésta obra nació queriendo plasmar los tonos del atardecer. Y como pasa siempre que la obra cobra vida y uno acompaña el proceso, resultó transmitir mucha pasión y energía. \nLa fusión de los tonos es muy poderosa y los detalles en dorado aportan un toque de sofisticación.',
-        englishDescription: "Does it also happen to you that when you look at the sky at that hour when the sun is setting, you suddenly feel something hypnotic, wishing that moment could last forever?\nIt happens to me at the beach, on the highway horizon while driving, or at my home window when the day is coming to a close...\nWell, this artwork was born from a desire to capture the tones of the sunset. And, as always happens when the artwork comes to life and you go along with the process, it ended up conveying so much passion and energy.\nThe blend of tones is incredibly powerful, and the golden details add a touch of sophistication.",
-        technique: "Acrílicos y pasta de relieve.",
-        englishTechnique: 'Acrylics and relief paste.',
-        price: 200000,
-        // priceUsd: 0,
-        size: '60 x 80 cm',
-        dispo: true,
-        small: false
-    },
-
-    {
-        id: 3,
+        id: 'triptico-marino',
         name: 'Triptico Marino',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/TripticoMarino/MockUpTriptico.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/TripticoMarino/TripticoA.jpg',
@@ -56,7 +128,7 @@ export const data = [
         small: false
     },
     {
-        id: 4,
+        id: 'esencia',
         name: 'Esencia',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esencia/Esencia2.jpg',
@@ -70,10 +142,10 @@ export const data = [
         price: 200000,
         // priceUsd: 0,
         size: '60 x 80 cm',
-        dispo: true,
+        dispo: false,
         small: false
     }, {
-        id: 5,
+        id: 'percepcion-dos',
         name: 'Percepcion 2',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion2/Percepcion2-2.jpg',
@@ -90,7 +162,7 @@ export const data = [
         dispo: true,
         small: false
     }, {
-        id: 6,
+        id: 'aurora',
         name: 'Aurora',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Aurora/Aurora2.jpg',
@@ -107,7 +179,7 @@ export const data = [
         dispo: true,
         small: false
     }, {
-        id: 7,
+        id: "luz-de-luna",
         name: 'Luz de luna',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LuzdeLuna/LuzLuna2.jpg',
@@ -125,7 +197,7 @@ export const data = [
         small: false
     },
     {
-        id: 8,
+        id: 'turmalina',
         name: 'Turmalina',
         principalImage: "https://www.artesust.com.ar/ImageSabrinaRecortadas/Turmalina/Turmalina1.jpg",
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Turmalina/Turmalina2.jpeg',
@@ -143,7 +215,7 @@ export const data = [
         small: false
     },
     {
-        id: 9,
+        id: 'atardecer',
         name: 'Atardecer',
         principalImage: "https://www.artesust.com.ar/ImageSabrinaRecortadas/Atardecer/Atardecer1.jpg",
         secondImage: "https://www.artesust.com.ar/ImageSabrinaRecortadas/Atardecer/Atardecer2.jpeg",
@@ -160,7 +232,7 @@ export const data = [
         small: false
     },
     {
-        id: 10,
+        id: 'profundidad',
         name: 'Profundidad',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Profundidad/Profundidad1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Profundidad/Profundidad2.jpeg',
@@ -178,7 +250,7 @@ export const data = [
         small: false
     },
     {
-        id: 11,
+        id: 'eternidad',
         name: 'Eternidad',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Eternidad/Eternidad1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Eternidad/Eternidad2.jpeg',
@@ -196,7 +268,7 @@ export const data = [
         small: false
     },
     {
-        id: 12,
+        id: 'ola-magnetica',
         name: 'La Ola Magnetica',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/OlaMagnetica/OlaMagnetica1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/OlaMagnetica/OlaMagnetica2.jpeg',
@@ -214,7 +286,7 @@ export const data = [
         small: false
     },
     {
-        id: 13,
+        id: 'ritmo',
         name: 'Ritmo',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Ritmo/Ritmo1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Ritmo/Ritmo2.jpeg',
@@ -232,7 +304,7 @@ export const data = [
         small: false
     },
     {
-        id: 14,
+        id: 'cambio',
         name: 'El Cambio',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElCambio/ElCambio1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElCambio/ElCambio2.jpeg',
@@ -250,7 +322,7 @@ export const data = [
         small: false
     },
     {
-        id: 15,
+        id: 'trazos',
         name: 'Trazos',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Trazos/Trazos1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Trazos/Trazos2.jpeg',
@@ -268,7 +340,7 @@ export const data = [
         small: false
     },
     {
-        id: 16,
+        id: 'arena-dorada',
         name: 'Arena Dorada',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ArenaDorada/ArenaDorada1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ArenaDorada/ArenaDorada2.jpeg',
@@ -286,7 +358,7 @@ export const data = [
         small: false
     },
     {
-        id: 17,
+        id: 'profundidad-contemporanea',
         name: 'Profundidad Contemporánea',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ProfundidadContemporanea/ProfContemporanea1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ProfundidadContemporanea/ProfContemporanea2.jpeg',
@@ -304,7 +376,7 @@ export const data = [
         small: false
     },
     {
-        id: 18,
+        id: 'caminos',
         name: 'Caminos',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Caminos/Caminos1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Caminos/Caminos2.jpeg',
@@ -322,7 +394,7 @@ export const data = [
         small: false
     },
     {
-        id: 19,
+        id: 'libertad',
         name: 'Libertad',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Libertad/Libertad1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Libertad/Libertad2.jpeg',
@@ -336,11 +408,11 @@ export const data = [
         price: 300000,
         // priceUsd: 20,
         size: '120 x 80 cm',
-        dispo: true,
+        dispo: false,
         small: false
     },
     {
-        id: 20,
+        id: 'golden',
         name: 'Golden',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Golden/Golden1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Golden/Golden2.jpeg',
@@ -358,7 +430,7 @@ export const data = [
         small: false
     },
     {
-        id: 21,
+        id: 'destello',
         name: 'Destello',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Destello/Destello1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Destello/Destello2.jpeg',
@@ -376,7 +448,7 @@ export const data = [
         small: false
     },
     {
-        id: 22,
+        id: 'noche-estrellada',
         name: 'La Noche Estrellada',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LaNocheEstrellada/NocheEstrellada1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/LaNocheEstrellada/NocheEstrellada2.jpeg',
@@ -394,7 +466,7 @@ export const data = [
         small: false
     },
     {
-        id: 23,
+        id: 'percepcion',
         name: 'Percepción',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion/Percepcion1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion/Percepcion2.jpeg',
@@ -403,7 +475,7 @@ export const data = [
         fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Percepcion/Percepcion5.jpeg',
         description: 'La importancia de entregarse a las sensaciones y a la forma en que la obra nos atraviesa.\nDonde algunos pueden ver y sentir la inmersión hacia el fondo, otros como yo podemos ver el impulso hacia el reflejo, la luz, la cima.\nÉsta obra invita a despertar los sentidos, apreciar los relieves, sentir la textura, ver la luz y la sombra.\nEstá presentada en marco flotante de Kiri negro.',
         englishDescription: "The importance of surrendering to sensations and the way the artwork moves through us.\nWhere some may see and feel the immersion into the depths, others like me can see the rise toward the reflection, the light, the peak.\nThis piece invites you to awaken your senses, appreciate the reliefs, feel the texture, and observe the light and shadow.\nIt is presented in a black Kiri floating frame.",
-        technique: 'Acrilicos y Pasta de modelar.',
+        technique: 'Acrílicos y Pasta de modelar.',
         englishTechnique: "Acrylics and modeling paste.",
         // price: 250000,
         // priceUsd: 20,
@@ -412,7 +484,7 @@ export const data = [
         small: false
     },
     {
-        id: 24,
+        id: 'resplandor',
         name: 'El Resplandor',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElResplandor/ElResplandor1.jpeg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElResplandor/ElResplandor2.jpeg',
@@ -421,7 +493,7 @@ export const data = [
         fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/ElResplandor/ElResplandor5.jpeg',
         description: 'Quiero compartir con vos ésta obra que disfruté mucho hacer.\nLa bauticé como 𝙀𝙡 𝙍𝙚𝙨𝙥𝙡𝙖𝙣𝙙𝙤𝙧 porque transmite mucha luz; no sólo por el brillo de sus láminas de cobre sino por todo lo que puse de mí al hacerlo.\nTiene todo para aportar personalidad a tu ambiente: relieve, brillo, toques de color y, sobre todo, carácter.\nEstá presentada con marco de Kiri flotante color negro.\nEl Resplandor fue expuesta en Cultura Viva y participa de la muestra Percepciones en Galería Zero618.',
         englishDescription: "I want to share with you this piece that I enjoyed creating so much.\nI named it 𝙀𝙡 𝙍𝙚𝙨𝙥𝙡𝙖𝙣𝙙𝙤𝙧 because it radiates a lot of light; not only from the shine of its copper sheets but also from everything I put into it while making it.\nIt has everything to add personality to your space: relief, shine, touches of color, and above all, character.\nIt is presented with a black kiri floating frame.\nEl Resplandor was exhibited at Cultura Viva and participates in the Percepciones show at Gallery Zero618.",
-        technique: 'Acrilico, laminas de cobre, pintura asfaltica.',
+        technique: 'Acrílico, laminas de cobre, pintura asfaltica.',
         englishTechnique: "Acrylic, copper sheets, asphalt paint.",
         price: 200000,
         // priceUsd: 20,
@@ -430,7 +502,7 @@ export const data = [
         small: false
     },
     {
-        id: 25,
+        id: 'tierra',
         name: 'Tierra',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Tierra/Tierra1.jpeg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Tierra/Tierra2.jpeg',
@@ -439,7 +511,7 @@ export const data = [
         fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Tierra/Tierra5.jpeg',
         description: 'Te invito a usar todos los sentidos para disfrutar de esta pieza y dejarte llevar...\nGracias a los colores, el brillo y la magia de la textura es imposible no detenerse un largo rato descubriendo cada rincón de este cuadro.\nEs ideal para dar un toque distinguido y original a un ambiente de tu casa creando un punto focal que se completa con un marco flotante de Kiri natural.\nTierra participó de la muestra Percepciones en Galería Zero618.',
         englishDescription: "I invite you to use all your senses to enjoy this piece and let yourself be carried away...\nThanks to the colors, the shine, and the magic of the texture, it's impossible not to stop for a long time discovering every corner of this painting.\nIt's ideal for adding a distinguished and original touch to a space in your home, creating a focal point that is complemented by a natural Kiri floating frame.\nTierra participated in the Percepciones show at Gallery Zero618.",
-        technique: 'Acrilicos y Pasta de modelar.',
+        technique: 'Acrílicos y Pasta de modelar.',
         englishTechnique: "Acrylics and modeling paste.",
         price: 200000,
         // priceUsd: 20,
@@ -448,7 +520,7 @@ export const data = [
         small: false
     },
     {
-        id: 26,
+        id: 'alma-revuelta',
         name: 'Alma Revuelta',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/AlmaRevuelta/AlmaRevuelta1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/AlmaRevuelta/AlmaRevuelta2.jpg',
@@ -466,7 +538,7 @@ export const data = [
         small: false
     },
     {
-        id: 27,
+        id: 'esmeralda',
         name: 'Esmeralda',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esmeralda/Esmeralda1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esmeralda/Esmeralda2.jpeg',
@@ -475,7 +547,7 @@ export const data = [
         fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Esmeralda/Esmeralda5.jpeg',
         description: 'Alguna vez te pasó de sentarte en un rincón de tu casa, ver una obra y sentir paz?\nBueno, eso es lo que ésta obra me transmite desde el primer momento creativo... Los distintos tonos turquesa y verde esmeralda y su movimiento me transportan al instante a un sentimiento de clara serenidad.\nSu color está relacionado con el crecimiento, el progreso, la naturaleza y la sanación; evocando también la tranquilidad y la paz.\nEnmarcado en madera flotante color negro.\nEsmeralda fue expuesta en Cultura Viva, Galería Zero618 y Palacio Barolo.',
         englishDescription: "Has there ever been a moment when you sat in a corner of your home, looked at a piece of art, and felt peace?\nWell, that’s what this piece has conveyed to me since the very first creative moment... The different turquoise and emerald green tones and their movement instantly transport me to a feeling of clear serenity.\nIts color is associated with growth, progress, nature, and healing, also evoking tranquility and peace.\nFramed in black floating wood.\nEsmeralda was exhibited at Cultura Viva, Gallery Zero618, and Palacio Barolo.",
-        technique: 'Acrilicos.',
+        technique: 'Acrílicos.',
         englishTechnique: "Acrylics.",
         price: 400000,
         // priceUsd: 20,
@@ -484,7 +556,7 @@ export const data = [
         small: false
     },
     {
-        id: 28,
+        id: 'espejo-marino',
         name: 'Espejo Marino',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/EspejoMarino/EspejoMarino1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/EspejoMarino/EspejoMarino2.jpeg',
@@ -502,7 +574,7 @@ export const data = [
         small: false
     },
     {
-        id: 29,
+        id: 'reflejos',
         name: 'Reflejos',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Reflejos/Reflejos1.jpg',
         secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Reflejos/Reflejos2.jpeg',

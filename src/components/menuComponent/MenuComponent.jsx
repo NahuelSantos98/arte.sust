@@ -36,6 +36,9 @@ const MenuComponent = () => {
           <li className={location.pathname === routes.bio ? style.selected : ''}>
             <Link to={routes.bio}>{!isEnglish ? 'Biografía' : 'Biography'}</Link>
           </li>
+          <li className={location.pathname === routes.prensa ? style.selected : ''}>
+            <Link to={routes.prensa}>{!isEnglish ? 'Prensa' : 'Media Press'}</Link>
+          </li>
           <li className={location.pathname === routes.contact ? style.selected : ''}>
             <Link to={routes.contact}>{!isEnglish ? 'Contacto' : 'Contact'}</Link>
           </li>

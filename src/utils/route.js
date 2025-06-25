@@ -5,5 +5,6 @@ export const routes = {
     contact: '/contact',
     artDetailWithId : '/detail/:id',
     artDetail : '/detail/',
-    smallFormat: '/smallFormat'
+    smallFormat: '/smallFormat',
+    prensa: '/press-media'
 }

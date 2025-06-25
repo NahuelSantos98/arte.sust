@@ -33,3 +33,8 @@ html{
     flex-grow: 1;
 }
 
+.notFoundPage{
+    color: rgb(255, 7, 7);
+    padding: 5rem 1rem;
+    text-align: center;
+}

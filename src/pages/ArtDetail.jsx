@@ -17,10 +17,10 @@ const ArtDetail = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const navigate = useNavigate();
 
-    const searchedArt = artworkData.find(obra => obra.id == parseInt(id));
+    const searchedArt = artworkData.find(obra => obra.id == id);
 
     if (!searchedArt) {
-        return <h2>Obra no encontrada</h2>;
+        return <h2 className={style.notFound}>Obra no encontrada</h2>;
     }
 
     const {

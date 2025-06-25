@@ -1,6 +1,6 @@
 export const smallFormat = [
     {
-        id: 100,
+        id: 'arena-dorada-small',
         name: 'Arena Dorada',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/ArenaDoradaChico/ArenaDorada.jpg',
         technique: 'Acrílicos, pasta de modelar y pintura asfáltica.',
@@ -12,7 +12,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 101,
+        id: 'percepcion-small',
         name: 'Percepción',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/PercepcionChico/PercepcionChico.jpg',
         technique: 'Acrílicos y pasta de modelar.',
@@ -24,7 +24,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 102,
+        id: 'salpicre-small',
         name: 'Salpicré',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/Salpicre/Salpicre.jpg',
         technique: 'Acrílicos.',
@@ -36,7 +36,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 103,
+        id: 'reflejos-negros-small',
         name: 'Reflejos Negro',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/ReflejosChico/ReflejosNegroChico.jpg',
         technique: 'Acrílicos y pasta de modelar.',
@@ -48,7 +48,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 104,
+        id: 'la-ola-small',
         name: 'La Ola',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/LaOlaChico/LaOla.jpg',
         technique: 'Acrílicos y relieves.',
@@ -60,7 +60,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 105,
+        id: 'caida-aguamarina-small',
         name: 'Caída de Aguamarina',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/CaidaAguaMarina/CaidaAguaMarina.jpg',
         technique: 'Acrílicos.',
@@ -72,7 +72,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 106,
+        id: 'paisaje-marino-small',
         name: 'Paisaje Marino',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/PaisajeMarino/PaisajeMarino.jpg',
         technique: 'Acrílicos, relieves y pintura asfáltica.',
@@ -84,7 +84,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 107,
+        id: 'reflejos-negro-small',
         name: 'Reflejos Negro',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/ReflejosNegroRectangular/ReflejosNegroRectangular.jpg',
         technique: 'Acrílicos y pasta de modelar.',
@@ -96,7 +96,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 108,
+        id: 'relieves-costeros-small',
         name: 'Relieves Costeros',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/RelievesCosteros/RelievesCosteros.jpg',
         technique: 'Acrílicos, relieves y pintura asfaltica.',
@@ -108,7 +108,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 109,
+        id: 'turmalina-small',
         name: 'Turmalina',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/RelievesCosteros/RelievesCosteros.jpg',
         technique: 'Acrílicos y relieves.',
@@ -120,7 +120,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 110,
+        id: 'fondo-etereo-azul-chico-small',
         name: 'Fondo Etereo Azul Chico',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/EtereoChico/FotoEtereoChico.jpg',
         technique: 'Acrílicos.',
@@ -132,7 +132,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 111,
+        id: 'fondo-etereo-verde-small',
         name: 'Fondo Etereo Verde',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/EtereoVerde/FotoEtereoVerde.jpg',
         technique: 'Acrílicos.',
@@ -144,7 +144,7 @@ export const smallFormat = [
         small: true
     },
     {
-        id: 112,
+        id: 'fondo-etereo-azul-small',
         name: 'Fondo Etereo Azul',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FormatoPequenio/Etereo/FotoEtereo.jpg',
         technique: 'Acrílicos.',
