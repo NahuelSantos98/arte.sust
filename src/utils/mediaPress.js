@@ -65,7 +65,7 @@ export const mediaPress = [
     title: "Entrevista en Artelugios.",
     title_en: "Interview on Artelugios.",
     type: "youtube",
-    iframeSrc: "https://www.youtube.com/embed/FG0UIB1C7t0",
+    iframeSrc: "https://www.youtube.com/embed/duFOhKEcRK8",
     description: "Entrevista en la radio Artelugios.",
     description_en: "Interview on Artelugios radio.",
   },
