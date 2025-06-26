@@ -22,10 +22,8 @@ export const mediaPress = [
     description_en: "Feature in Caras Magazine about the emotional journey through art.",
     preview: {
       image: carasPreviewViaje,
-      title: "Un viaje emocional a través del arte.",
-      title_en: "An emotional journey through art.",
-      description: "Una nota especial de Revista Caras Deco que explora el vínculo entre emoción y creatividad.",
-      description_en: "A special feature in Caras Deco exploring the link between emotion and creativity."
+      title: "Revista Caras - Suplemento DECO: Nota #1 - Un viaje emocional a través del arte.",
+      title_en: "Caras Magazine – DECO Supplement: Feature #1 – An emotional journey through art.",
     }
   },
   {
@@ -38,10 +36,8 @@ export const mediaPress = [
     description_en: "Feature in Caras Magazine about how art is freedom and connection with authenticity.",
     preview: {
       image: carasPreviewLibertad,
-      title: "El arte es libertad y conexión con autenticidad.",
-      title_en: "Art is freedom and connection with authenticity.",
-      description: "Una nota de Revista Caras sobre cómo el arte conecta desde lo genuino y lo libre.",
-      description_en: "A Caras Magazine article on how art connects through authenticity and freedom."
+      title: "Revista Caras - Suplemento DECO: Nota #2 - El arte es libertad y conexión con autenticidad.",
+      title_en: "Caras Magazine – DECO Supplement: Feature #2 – Art is freedom and a connection with authenticity.",
     }
   },
   {
@@ -54,10 +50,8 @@ export const mediaPress = [
     description_en: "Feature in Caras Magazine about the art of showcasing more than just artwork.",
     preview: {
       image: carasPreviewExpo,
-      title: "El arte de exponer mucho más que obras.",
-      title_en: "The art of exhibiting much more than works.",
-      description: "Una reflexión publicada en Caras sobre la exposición artística como experiencia transformadora.",
-      description_en: "A Caras article reflecting on artistic exhibition as a transformative experience."
+      title: "Revista Caras - Suplemento DECO: Nota #3 - El arte de exponer mucho más que obras.",
+      title_en: "Caras Magazine – DECO Supplement: Feature #3 – The art of showcasing much more than just artwork.",
     }
   },
   {

@@ -30,7 +30,6 @@ const CardMedia = ({ item }) => {
           <img src={item.preview.image} alt={previewTitle} />
           <div className={styles.previewContent}>
             <h4>{previewTitle}</h4>
-            <p>{previewDescription}</p>
           </div>
         </a>
       ) : item.type === 'link' && (
