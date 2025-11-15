@@ -39,12 +39,26 @@ const ArtDetail = () => {
         priceUsd,
         dispo,
         small,
-        triptico
+        triptico,
+        priceMirror,
+        price4,
+        price4Mirror,
+        sizeMirror
     } = searchedArt;
 
-    const priceWithDot = price?.toLocaleString('de-DE')
-    
+    const formatPrice = (value) => {
+        if (value === null || value === undefined) return null;
+        const numericValue = typeof value === 'number' ? value : Number(value);
+        if (Number.isNaN(numericValue)) return null;
+        return numericValue.toLocaleString('de-DE');
+    };
 
+    const priceWithDot = formatPrice(price);
+    const priceMirrorWithDot = formatPrice(priceMirror);
+    const price4WithDot = formatPrice(price4);
+    const price4MirrorWithDot = formatPrice(price4Mirror);
+    const priceUsdWithDot = formatPrice(priceUsd);
+    
     const images = !small
         ? [principalImage, secondImage, thirdImage, fourthImage, fifthImage].filter(Boolean)
         : [];
@@ -98,10 +112,17 @@ const ArtDetail = () => {
                     <p className={style.dispo}>{isEnglish ? "Sold" : "Vendido"}</p>
                 </div>
             )}
-            {priceWithDot && <p>{isEnglish? `Price: $${priceWithDot} (ARG)` : `Precio: $${priceWithDot}`}</p>}
+            <div className={style.textDetailContainer}>
+            {priceWithDot && <p>{isEnglish? `Price ${price4 && "individual" || ""}: $${priceWithDot} (ARG)` : `Precio: $${priceWithDot} (ARG)`}</p>}
+            {priceMirrorWithDot && <p>{isEnglish? "Price with mirror: $" + priceMirrorWithDot + " (ARG)" : "Precio con espejo: $" + priceMirrorWithDot + " (ARG)"}</p>}
+            {price4WithDot && <p>{isEnglish? "Price for 4 artworks: $" + price4WithDot + " (ARG)" : "Precio 4 obras: $" + price4WithDot + " (ARG)"}</p>}
+            {price4MirrorWithDot && <p>{isEnglish? "Price for 4 artworks with mirrors: $" + price4MirrorWithDot + " (ARG)" : "Precio 4 obras con espejo: $" + price4MirrorWithDot + " (ARG)"}</p>}
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
-            <p>{size}</p>
+            <p>{price4 && isEnglish? "Individual size: " : price4 && "Tamaño individual: " }{size}</p>
+            {sizeMirror && <p>{isEnglish? "Size with mirror: " + sizeMirror : "Tamaño con espejo: " + sizeMirror}</p>}
             {triptico && <p>{isEnglish? "Complete triptic" : "Triptico completo"}: {triptico}</p>}
+            </div>
+
 
             {!small && (
                 <div className={style.secondaryImageContainer}>
