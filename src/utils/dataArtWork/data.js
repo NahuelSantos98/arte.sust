@@ -17,6 +17,23 @@ export const data = [
         small: false
     },
     {
+        id: 'corteza-nocturna',
+        name: 'Corteza Nocturna',
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/CortezaNocturna/CortezaNocturna1.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/CortezaNocturna/CortezaNocturna2.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/CortezaNocturna/CortezaNocturna3.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/CortezaNocturna/CortezaNocturna4.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/CortezaNocturna/CortezaNocturna5.jpg',
+        description: 'Éste cuadro tiene una textura muy marcada que recuerda a la corteza de un árbol y contrasta con el brillo de las láminas de plata generando un efecto atractivo y potente.\nEnmarcada en kiri flotante, es especial para sumarle un toque de distinción a un rincón e ideal para poner cerca de una ventana para que resalte el brillo de la plata.\nAl verlo es inevitable tener ganas de tocarlo por el juego de sus relieves.',
+        englishDescription: 'This painting features a highly pronounced texture that recalls the bark of a tree and contrasts with the shine of the silver leaf, creating an attractive and powerful effect.\nFramed in floating kiri wood, it is perfect for adding a touch of distinction to a corner and ideal to place near a window so the silver’s shine can stand out.\nWhen viewing it, it is almost impossible not to feel the urge to touch it because of the interplay of its reliefs.',
+        technique: 'Acrílico, texturas, láminas de plata y aerosol',
+        englishTechnique: 'Acrylic, textures, silver leafs and spray paint.',
+        // price: 250000, // priceUsd: 0,
+        size: '30 x 40 cm',
+        dispo: true,
+        small: false
+    },
+    {
         id: 'fuego-interno',
         name: 'Fuego interno',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/FuegoInterno/FuegoInterno1.jpg',
@@ -103,7 +120,7 @@ export const data = [
         // price: 200000,
         // priceUsd: 0,
         size: '120 x 50 cm',
-        dispo: true,
+        dispo: false,
         small: false
     },
     {
