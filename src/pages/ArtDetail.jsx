@@ -118,7 +118,7 @@ const ArtDetail = () => {
             {/* {price4WithDot && <p>{isEnglish? "Price for 4 artworks: $" + price4WithDot + " (ARG)" : "Precio 4 obras: $" + price4WithDot + " (ARG)"}</p>} */}
             {/* {price4MirrorWithDot && <p>{isEnglish? "Price for 4 artworks with mirrors: $" + price4MirrorWithDot + " (ARG)" : "Precio 4 obras con espejo: $" + price4MirrorWithDot + " (ARG)"}</p>} */}
             <p className={style.detailTechnique}>{isEnglish ? englishTechnique : technique}</p>
-            {/* <p>{price4 && isEnglish? "Individual size: " : price4 && "Tamaño individual: " }{size}</p> */}
+            <p>{price4 && isEnglish? "Individual size: " : price4 && "Tamaño individual: " }{size}</p>
             {sizeMirror && <p>{isEnglish? "Size with mirror: " + sizeMirror : "Tamaño con espejo: " + sizeMirror}</p>}
             {triptico && <p>{isEnglish? "Complete triptic" : "Triptico completo"}: {triptico}</p>}
             </div>
