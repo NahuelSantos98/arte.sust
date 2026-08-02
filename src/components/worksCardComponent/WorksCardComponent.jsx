@@ -3,7 +3,8 @@ import Loading from '../loadingComponent/Loading'
 import style from './worksCardComponent.module.css'
 
 const WorksCardComponent = ({ item }) => {
-  const { principalImage, name, small } = item;
+  const { principalImage, images, name, small } = item;
+  const cardImage = Array.isArray(images) && images.length ? images[0] : principalImage;
   
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +16,7 @@ const WorksCardComponent = ({ item }) => {
     <>
       {loading && <div className={style.loadingDiv}><Loading /></div> }
       <img 
-        src={principalImage} 
+        src={cardImage} 
         style={{display: loading ? 'none' : 'block' }} 
         className={` ${style.imageArtwork} ${!small && `${style.shadow}`}`}
         onLoad={handleImageLoad} 

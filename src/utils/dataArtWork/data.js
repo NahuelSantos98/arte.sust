@@ -1,5 +1,25 @@
 export const data = [
     {
+        id: 'cenizas',
+        name: 'Cenizas',
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas1.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas2.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas3.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas4.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas5.jpg',
+        sixthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas6.jpg',
+        seventhImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas7.jpg',
+        eighthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Cenizas/Cenizas8.jpg',
+        description: 'Todo lo que arde deja una huella. Las cenizas no son solo el final de algo, sino el rastro de una transformación. Entre la materia apagada emerge el oro, recordándonos que incluso después de la pérdida, la belleza y la esperanza pueden abrirse paso.\nÉsta es una obra sobria, introspectiva y con un punto de esperanza que aportaría un centro focal en cualquier ambiente.',
+        englishDescription: 'Everything that burns leaves a trace. Ashes are not merely the end of something, but the mark of a transformation. From within the extinguished matter, gold emerges, reminding us that even after loss, beauty and hope can still find their way through.\nThis is a restrained, introspective piece with a touch of hope, capable of becoming a focal point in any space.',
+        technique: 'Pasta de relieves, piedras de cuarzo, acrílicos y láminas de oro.',
+        englishTechnique: 'Relief paste, quartz stones, acrylics and gold leaf.',
+        // price: 250000, priceUsd: 0
+        size: '60 x 80 cm',
+        dispo: true,
+        small: false
+    },
+    {
         id: 'bariloche',
         name: 'Bariloche',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche1.jpg',
@@ -7,13 +27,15 @@ export const data = [
         thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche3.jpg',
         fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche4.jpg',
         fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche5.jpg',
+        sixthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche6.jpg',
+        seventhImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche7.jpg',
         description: 'Entre relieves, profundidades y la paz del agua cristalina, ésta obra te invita a viajar a la Patagonia Argentina las veces que quieras.\nEs un viaje sensorial en el que se mezcla el arte y una nueva experiencia. Inevitablemente provoca sentir ganas de estar parado al borde de ese muelle viendo hipnotizado la Península San Pedro y el cordón del Cerro Lopez.\nLa obra no sólo es hermosa, sino que también lleva impregnada toda la hermosa energía que le transferí al crearla.',
         englishDescription: 'Amid textures, depths, and the serenity of crystal-clear waters, this artwork invites you to journey to Argentine Patagonia whenever you wish.\nIt is a sensory journey where art blends with a new experience. It inevitably makes you long to stand at the edge of that pier, mesmerized by the San Pedro Peninsula and the Cerro López mountain range.\nThe artwork is not only beautiful, but also infused with all the wonderful energy I transferred to it while creating it.',
         technique: 'Acrílicos, relieves y pintura asfáltica.',
         englishTechnique: 'Acrylic, reliefs and asphalt paint.',
-        // price: 250000, // priceUsd: 0,
+        price: 250000, // priceUsd: 0
         size: '60 x 80 cm',
-        dispo: false,
+        dispo: true,
         small: false
     },
     {
