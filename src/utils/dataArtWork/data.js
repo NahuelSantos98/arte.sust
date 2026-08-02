@@ -1,5 +1,22 @@
 export const data = [
     {
+        id: 'bariloche',
+        name: 'Bariloche',
+        principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche1.jpg',
+        secondImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche2.jpg',
+        thirdImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche3.jpg',
+        fourthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche4.jpg',
+        fifthImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/Bariloche/Bariloche5.jpg',
+        description: 'Entre relieves, profundidades y la paz del agua cristalina, ésta obra te invita a viajar a la Patagonia Argentina las veces que quieras.\nEs un viaje sensorial en el que se mezcla el arte y una nueva experiencia. Inevitablemente provoca sentir ganas de estar parado al borde de ese muelle viendo hipnotizado la Península San Pedro y el cordón del Cerro Lopez.\nLa obra no sólo es hermosa, sino que también lleva impregnada toda la hermosa energía que le transferí al crearla.',
+        englishDescription: 'Amid textures, depths, and the serenity of crystal-clear waters, this artwork invites you to journey to Argentine Patagonia whenever you wish.\nIt is a sensory journey where art blends with a new experience. It inevitably makes you long to stand at the edge of that pier, mesmerized by the San Pedro Peninsula and the Cerro López mountain range.\nThe artwork is not only beautiful, but also infused with all the wonderful energy I transferred to it while creating it.',
+        technique: 'Acrílicos, relieves y pintura asfáltica.',
+        englishTechnique: 'Acrylic, reliefs and asphalt paint.',
+        // price: 250000, // priceUsd: 0,
+        size: '60 x 80 cm',
+        dispo: false,
+        small: false
+    },
+    {
         id: 'amanecer-en-vuelo',
         name: 'Amanecer en vuelo',
         principalImage: 'https://www.artesust.com.ar/ImageSabrinaRecortadas/AmanecerVuelo/AmanecerVuelo1.jpg',
