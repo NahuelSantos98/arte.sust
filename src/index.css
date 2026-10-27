@@ -38,3 +38,19 @@ html{
     padding: 5rem 1rem;
     text-align: center;
 }
+
+.grecaptcha-badge {
+    left: 4px !important;
+    right: auto !important;
+    bottom: 4px !important;
+    width: 70px !important;
+    overflow: hidden !important;
+    transform: scale(0.55) !important;
+    transform-origin: bottom left !important;
+    transition: width 0.3s ease !important;
+    z-index: 850 !important;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
+}

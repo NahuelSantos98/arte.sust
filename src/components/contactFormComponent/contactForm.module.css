@@ -54,6 +54,11 @@
     border:solid 2px white;
 }
 
+.submitFormComment:disabled{
+    opacity: 0.7;
+    cursor: default;
+}
+
 .errorMessageInput{
     color: red;
     text-align: center;

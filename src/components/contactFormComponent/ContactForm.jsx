@@ -1,46 +1,87 @@
-import { useContext, useRef, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import { LanguageContext } from "../../context/languageContext"
 import style from './contactForm.module.css'
-import emailjs from '@emailjs/browser'
+
+const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY
+
+const loadRecaptcha = (key) => {
+    if (window.grecaptcha) {
+        return new Promise((resolve) => {
+            window.grecaptcha.ready(() => resolve(window.grecaptcha))
+        })
+    }
+
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = `https://www.google.com/recaptcha/api.js?render=${key}`
+        script.async = true
+        script.onload = () => window.grecaptcha.ready(() => resolve(window.grecaptcha))
+        script.onerror = () => reject(new Error('recaptcha'))
+        document.head.appendChild(script)
+    })
+}
 
 const ContactForm = () => {
     const { state } = useContext(LanguageContext)
     const isEnglish = state.language
     const { register, handleSubmit, formState: { errors }, watch, reset } = useForm()
     const [sent, setSent] = useState(false)
+    const [sending, setSending] = useState(false)
+    const [sendError, setSendError] = useState('')
 
     const commentValue = watch("comment", "")
     const lengthComment = commentValue.length
 
-    const refForm = useRef("")
+    useEffect(() => {
+        if (!siteKey) return
+        loadRecaptcha(siteKey).catch(() => {})
+    }, [])
 
-    const submitForm = () => {
-        const serviceId = import.meta.env.VITE_SERVICE_ID
-        const templateId = import.meta.env.VITE_TEMPLATE_ID
-        const templateIdInfo = import.meta.env.VITE_TEMPLATE_ID_INFO
-        const key = import.meta.env.VITE_EMAIL_API_KEY
+    const submitForm = async (data) => {
+        setSendError('')
+        setSent(false)
 
-        emailjs.sendForm(serviceId, templateId, refForm.current, key)
-            .then(res => {
-                setSent(true)
-                reset()
-                console.log(res.text);
+        if (!siteKey) {
+            setSendError(isEnglish ? "The contact form is not configured yet." : "El formulario todavía no está configurado.")
+            return
+        }
+
+        setSending(true)
+
+        try {
+            const grecaptcha = await loadRecaptcha(siteKey)
+            const recaptchaToken = await grecaptcha.execute(siteKey, { action: 'contact' })
+            const response = await fetch('/contactMail.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: data.name,
+                    email: data.email,
+                    number: data.number,
+                    comment: data.comment,
+                    recaptchaToken,
+                }),
             })
-            .catch(err => console.error(err))
+            const result = await response.json().catch(() => ({}))
 
-            emailjs.sendForm(serviceId, templateIdInfo, refForm.current, key)
-            .then(res => {
-                console.log(res.text);
-            })
-            .catch(err => console.error(err))
+            if (!response.ok || !result.ok) {
+                throw new Error('send failed')
+            }
+
+            setSent(true)
+            reset()
+        } catch {
+            setSendError(isEnglish ? "The message could not be sent. Try again." : "No se pudo enviar el mensaje. Intentá de nuevo.")
+        } finally {
+            setSending(false)
+        }
     }
-
 
     return (
         <div className={style.containerFormAndThanks}>
-            
-            <form ref={refForm} onSubmit={handleSubmit(submitForm)} className={style.formContainer}>
+
+            <form onSubmit={handleSubmit(submitForm)} className={style.formContainer}>
                         <h3>{isEnglish ? "Let's talk!!" : 'Hablemos!!'}</h3>
                         <div className={style.inputContainer}>
                             <input
@@ -127,7 +168,6 @@ const ContactForm = () => {
                         <div className={`${style.textareaContainer} ${style.inputContainer}`}>
                             <textarea
                                 placeholder={isEnglish ? "Comment" : "Comentario"}
-                                type="text"
                                 name="comment"
                                 id="comment"
                                 maxLength={200}
@@ -151,11 +191,14 @@ const ContactForm = () => {
                         </div>
 
                             <div className={`${style.inputContainer} ${style.buttonSubmitContainer}`}>
-                            <button className={style.submitFormComment} type="submit">{isEnglish ? "Send" : "Enviar"}</button>
+                            <button className={style.submitFormComment} type="submit" disabled={sending}>
+                                {sending ? (isEnglish ? "Sending..." : "Enviando...") : (isEnglish ? "Send" : "Enviar")}
+                            </button>
+                            {sendError && <span className={style.errorMessageInput}>{sendError}</span>}
                             </div>
                     </form>
 
-        {sent && 
+        {sent &&
             <div className={style.confirmationMessageContainer}>
                 <p>{isEnglish? "The email has been sent, in a few days Sabrina will contact you." : "El email fue enviado, en unos dias Sabrina se contactara contigo"}</p>
             </div>
